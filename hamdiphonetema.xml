@@ -8,7 +8,7 @@
 <b:defaultmarkups>
 <b:defaultmarkup type='Common'>
 <b:includable id='JetAll-head-content'>
-<script>function rmurl(c,a){var b=new RegExp(/\?m=0|&amp;m=0|\?m=1|&amp;m=1/g);return b.test(c)&amp;&amp;(c=c.replace(b,&quot;&quot;),a&amp;&amp;window.history.replaceState({},document.title,c)),c}const currentUrl=rmurl(location.toString(),!0);null!==localStorage&amp;&amp;&quot;dark&quot;==localStorage.getItem(&quot;theme&quot;)&amp;&amp;(document.querySelector(&quot;html&quot;).className=&quot;dark-mode&quot;);</script>
+<script>function rmurl(f,e){var d=new RegExp(/\?m=0|&amp;m=0|\?m=1|&amp;m=1/g);return d.test(f)&amp;&amp;(f=f.replace(d,&quot;&quot;),e&amp;&amp;window.history.replaceState({},document.title,f)),f}const currentUrl=rmurl(location.toString(),!0);null!==localStorage&amp;&amp;&quot;dark&quot;==localStorage.getItem(&quot;theme&quot;)&amp;&amp;(document.querySelector(&quot;html&quot;).className=&quot;dark-mode&quot;);</script>
 <meta expr:content='&quot;text/html; charset=&quot; + data:blog.encoding' http-equiv='Content-Type'/>
 <meta content='width=device-width,initial-scale=1' name='viewport'/>
 <link expr:href='data:view.url.canonical' rel='canonical'/>
@@ -90,10 +90,10 @@
 </b:widget>
 <b:widget id='LinkList11' locked='true' title='Menu' type='LinkList' version='2' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='link-5'>/p/sitemap.html</b:widget-setting>
+<b:widget-setting name='link-5'>/p/arsiv.html</b:widget-setting>
 <b:widget-setting name='link-6'>/p/iletisim.html</b:widget-setting>
-<b:widget-setting name='link-3'>/p/gizlilik.html</b:widget-setting>
-<b:widget-setting name='link-4'>/p/hakkinda.html</b:widget-setting>
+<b:widget-setting name='link-3'>/p/gizlilik-politikas.html</b:widget-setting>
+<b:widget-setting name='link-4'>/p/hakkmzda.html</b:widget-setting>
 <b:widget-setting name='text-1'>Menü</b:widget-setting>
 <b:widget-setting name='text-0'>Anasayfa</b:widget-setting>
 <b:widget-setting name='text-3'>Gizlilik Politikası</b:widget-setting>
@@ -102,7 +102,7 @@
 <b:widget-setting name='text-4'>Hakkında</b:widget-setting>
 <b:widget-setting name='text-6'>İletişim</b:widget-setting>
 <b:widget-setting name='sorting'>NONE</b:widget-setting>
-<b:widget-setting name='link-1'>/</b:widget-setting>
+<b:widget-setting name='link-1'>#</b:widget-setting>
 <b:widget-setting name='link-2'>#sub-start</b:widget-setting>
 <b:widget-setting name='link-0'>/</b:widget-setting>
 </b:widget-settings>
@@ -395,48 +395,6 @@
 </div>
 <div class='col-lg-4 px-3 pb-5 position-relative ms-auto' content='itemid' id='sidebar' itemid='#sidebar' itemscope='itemscope' itemtype='https://schema.org/WPSideBar'>
 <b:section class='pt-4' id='sidebar-static' itemscope='itemscope'>
-<b:widget id='PopularPosts10' locked='false' title='Popüler Yayınlar' type='PopularPosts' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='numItemsToShow'>6</b:widget-setting>
-<b:widget-setting name='showThumbnails'>true</b:widget-setting>
-<b:widget-setting name='showSnippets'>false</b:widget-setting>
-<b:widget-setting name='timeRange'>LAST_MONTH</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
-<b:include name='JetPopularPosts'/>
-</b:includable>
-<b:includable id='blogThisShare'/>
-<b:includable id='bylineByName'/>
-<b:includable id='bylineRegion'/>
-<b:includable id='commentsLink'/>
-<b:includable id='commentsLinkIframe'/>
-<b:includable id='emailPostIcon'/>
-<b:includable id='facebookShare'/>
-<b:includable id='footerBylines'/>
-<b:includable id='googlePlusShare'/>
-<b:includable id='headerByline'/>
-<b:includable id='linkShare'/>
-<b:includable id='otherSharingButton'/>
-<b:includable id='platformShare'/>
-<b:includable id='postAuthor'/>
-<b:includable id='postCommentsLink'/>
-<b:includable id='postJumpLink'/>
-<b:includable id='postLabels'/>
-<b:includable id='postLocation'/>
-<b:includable id='postReactions'/>
-<b:includable id='postShareButtons'/>
-<b:includable id='postTimestamp'/>
-<b:includable id='sharingButton'/>
-<b:includable id='sharingButtonContent'/>
-<b:includable id='sharingButtons'/>
-<b:includable id='sharingButtonsMenu'/>
-<b:includable id='sharingPlatformIcon'/>
-<b:includable id='snippetedPostByline'/>
-<b:includable id='snippetedPostContent'/>
-<b:includable id='snippetedPostThumbnail'/>
-<b:includable id='snippetedPostTitle'/>
-<b:includable id='snippetedPosts'/>
-</b:widget>
 <b:widget id='Label10' locked='false' title='Kategoriler' type='Label' visible='false'>
 <b:widget-settings>
 <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
@@ -467,19 +425,11 @@
 <b:includable id='content'/>
 <b:includable id='list'/>
 </b:widget>
-<b:widget id='HTML19' locked='false' title='#Recent Post' type='HTML' visible='true'>
-<b:widget-settings>
-<b:widget-setting name='content'><![CDATA[<div data-title="Son Yayılar" class="custom-posts visually-hidden" data-items="6" data-func="sidebar_temp"></div>]]></b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
-<b:include name='JetHtml'/>
-</b:includable>
-</b:widget>
 </b:section>
 <b:section class='position-sticky py-4 top-0' id='sidebar-sticky' itemscope='itemscope'>
-<b:widget id='HTML20' locked='false' title='#Reklam Alanı -8' type='HTML' visible='false'>
+<b:widget id='HTML20' locked='false' title='#Recent Post' type='HTML' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='content'><![CDATA[<hr class="example-ads"/>]]></b:widget-setting>
+<b:widget-setting name='content'><![CDATA[<div data-title="Son Yayılar" class="custom-posts visually-hidden" data-items="6" data-func="sidebar_temp"></div>]]></b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
 <b:include name='JetHtml'/>
