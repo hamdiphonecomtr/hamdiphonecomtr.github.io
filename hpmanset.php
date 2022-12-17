@@ -218,6 +218,7 @@ $(function() {
 		}
 	}, 'json').fail(function(data) {
 		$('#loading').fadeOut('fast', function() {
+			showErrorMessage("An unexpected error occurred. Please try again later or <a href='https://feed.mikle.com/contact/' target='_blank'>contact</a> our support. (" + data.status + ": " + data.statusText + ")");
 		});
 	});
 });
