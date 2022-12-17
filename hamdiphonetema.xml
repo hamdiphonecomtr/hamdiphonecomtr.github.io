@@ -8,7 +8,7 @@
 <b:defaultmarkups>
 <b:defaultmarkup type='Common'>
 <b:includable id='JetAll-head-content'>
-<script>function rmurl(b,c){var a=new RegExp(/\?m=0|&amp;m=0|\?m=1|&amp;m=1/g);return a.test(b)&amp;&amp;(b=b.replace(a,&quot;&quot;),c&amp;&amp;window.history.replaceState({},document.title,b)),b}const currentUrl=rmurl(location.toString(),!0);null!==localStorage&amp;&amp;&quot;dark&quot;==localStorage.getItem(&quot;theme&quot;)&amp;&amp;(document.querySelector(&quot;html&quot;).className=&quot;dark-mode&quot;);</script>
+<script>function rmurl(d,f){var e=new RegExp(/\?m=0|&amp;m=0|\?m=1|&amp;m=1/g);return e.test(d)&amp;&amp;(d=d.replace(e,&quot;&quot;),f&amp;&amp;window.history.replaceState({},document.title,d)),d}const currentUrl=rmurl(location.toString(),!0);null!==localStorage&amp;&amp;&quot;dark&quot;==localStorage.getItem(&quot;theme&quot;)&amp;&amp;(document.querySelector(&quot;html&quot;).className=&quot;dark-mode&quot;);</script>
 <meta content='9tofuoJ8pmybPbrd8--JVohuYFF7xxpWukQUAMUTm88' name='google-site-verification'/>
 <meta content='39de147c062d6a59' name='yandex-verification'/>
 <meta expr:content='&quot;text/html; charset=&quot; + data:blog.encoding' http-equiv='Content-Type'/>
@@ -69,7 +69,7 @@
 <b:section class='container position-relative px-3 flex-nowrap' id='header-main' maxwidgets='3' showaddelement='no'>
 <b:widget id='HTML10' locked='true' title='Logo' type='HTML' version='2' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='content'>https://blogger.googleusercontent.com/img/a/AVvXsEisOkJHuR5vNaW8c1s5e8a8kcENGOXXDLKd-i-s_zDdhtUEJzLIT-EjWG5wyErsw0KGds_pxM0kXWZtPj3dDK4UNsaL-LlgJnK41tXiugHPKaFssJqfU6YOaHF_8naCgjUG7e4ZOaEulLvnUZCpKoLTuhHPlN0Gi1faR1ITOQPhdrE922SFwoesYbWC=s400</b:widget-setting>
+<b:widget-setting name='content'>https://hamdiphonecomtr.github.io/hamdiphone.png</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
 <b:include name='JetLogo'/>
@@ -79,10 +79,10 @@
 <b:widget-settings>
 <b:widget-setting name='sorting'>NONE</b:widget-setting>
 <b:widget-setting name='text-1'>instagram</b:widget-setting>
-<b:widget-setting name='link-1'>#</b:widget-setting>
+<b:widget-setting name='link-1'>https://www.instagram.com/dilekhamdiuludag/</b:widget-setting>
 <b:widget-setting name='text-0'>facebook</b:widget-setting>
-<b:widget-setting name='link-2'>https://t.me/hamdiphone</b:widget-setting>
-<b:widget-setting name='link-0'>#</b:widget-setting>
+<b:widget-setting name='link-2'>https://t.me/HamdiPhone</b:widget-setting>
+<b:widget-setting name='link-0'>https://www.facebook.com/dilekhamdiuludag</b:widget-setting>
 <b:widget-setting name='text-2'>telegram</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
