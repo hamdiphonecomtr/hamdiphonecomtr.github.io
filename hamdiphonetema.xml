@@ -8,7 +8,7 @@
 <b:defaultmarkups>
 <b:defaultmarkup type='Common'>
 <b:includable id='JetAll-head-content'>
-<script>function rmurl(d,f){var e=new RegExp(/\?m=0|&amp;m=0|\?m=1|&amp;m=1/g);return e.test(d)&amp;&amp;(d=d.replace(e,&quot;&quot;),f&amp;&amp;window.history.replaceState({},document.title,d)),d}const currentUrl=rmurl(location.toString(),!0);null!==localStorage&amp;&amp;&quot;dark&quot;==localStorage.getItem(&quot;theme&quot;)&amp;&amp;(document.querySelector(&quot;html&quot;).className=&quot;dark-mode&quot;);</script>
+<script>function rmurl(f,e){var d=new RegExp(/\?m=0|&amp;m=0|\?m=1|&amp;m=1/g);return d.test(f)&amp;&amp;(f=f.replace(d,&quot;&quot;),e&amp;&amp;window.history.replaceState({},document.title,f)),f}const currentUrl=rmurl(location.toString(),!0);null!==localStorage&amp;&amp;&quot;dark&quot;==localStorage.getItem(&quot;theme&quot;)&amp;&amp;(document.querySelector(&quot;html&quot;).className=&quot;dark-mode&quot;);</script>
 <meta content='9tofuoJ8pmybPbrd8--JVohuYFF7xxpWukQUAMUTm88' name='google-site-verification'/>
 <meta content='39de147c062d6a59' name='yandex-verification'/>
 <meta expr:content='&quot;text/html; charset=&quot; + data:blog.encoding' http-equiv='Content-Type'/>
@@ -81,9 +81,9 @@
 <b:widget-setting name='text-1'>instagram</b:widget-setting>
 <b:widget-setting name='link-1'>https://www.instagram.com/dilekhamdiuludag/</b:widget-setting>
 <b:widget-setting name='text-0'>facebook</b:widget-setting>
-<b:widget-setting name='link-2'>https://t.me/HamdiPhone</b:widget-setting>
+<b:widget-setting name='link-2'>https://wa.me/+905441440605/</b:widget-setting>
 <b:widget-setting name='link-0'>https://www.facebook.com/dilekhamdiuludag</b:widget-setting>
-<b:widget-setting name='text-2'>telegram</b:widget-setting>
+<b:widget-setting name='text-2'>whatsapp</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
 <b:include name='JetSearch'/>
@@ -170,8 +170,8 @@
 <b:widget id='HTML26' locked='false' title='#CustomPost by Label' type='HTML' visible='false'>
 <b:widget-settings>
 <b:widget-setting name='content'>&lt;div class=&quot;row&quot;&gt;
-&lt;div data-label=&quot;Güncel&quot; data-title=&quot;&quot; class=&quot;custom-posts visually-hidden col-lg-8&quot; data-items=&quot;5&quot; data-func=&quot;layout1_temp&quot;&gt;&lt;/div&gt;
-&lt;div data-label=&quot;Güncel&quot; data-title=&quot;&quot; class=&quot;custom-posts visually-hidden col-lg-4&quot; data-items=&quot;2&quot; data-func=&quot;layout2_temp&quot;&gt;&lt;/div&gt;
+&lt;div data-label=&quot;Hatay&quot; data-title=&quot;&quot; class=&quot;custom-posts visually-hidden col-lg-8&quot; data-items=&quot;5&quot; data-func=&quot;layout1_temp&quot;&gt;&lt;/div&gt;
+&lt;div data-label=&quot;Spor&quot; data-title=&quot;&quot; class=&quot;custom-posts visually-hidden col-lg-4&quot; data-items=&quot;2&quot; data-func=&quot;layout2_temp&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
@@ -397,21 +397,6 @@
 </div>
 <div class='col-lg-4 px-3 pb-5 position-relative ms-auto' content='itemid' id='sidebar' itemid='#sidebar' itemscope='itemscope' itemtype='https://schema.org/WPSideBar'>
 <b:section class='pt-4' id='sidebar-static' itemscope='itemscope'>
-<b:widget id='Label10' locked='false' title='Kategoriler' type='Label' visible='false'>
-<b:widget-settings>
-<b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-<b:widget-setting name='display'>LIST</b:widget-setting>
-<b:widget-setting name='selectedLabelsList'/>
-<b:widget-setting name='showType'>ALL</b:widget-setting>
-<b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
-<b:include name='JetLabel'/>
-</b:includable>
-<b:includable id='cloud'/>
-<b:includable id='content'/>
-<b:includable id='list'/>
-</b:widget>
 <b:widget id='Label11' locked='false' title='Hashtag Etiketler' type='Label' visible='false'>
 <b:widget-settings>
 <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
@@ -427,11 +412,19 @@
 <b:includable id='content'/>
 <b:includable id='list'/>
 </b:widget>
-</b:section>
-<b:section class='position-sticky py-4 top-0' id='sidebar-sticky' itemscope='itemscope'>
-<b:widget id='HTML20' locked='false' title='#Recent Post' type='HTML' visible='true'>
+<b:widget id='HTML20' locked='false' title='#Recent Post' type='HTML' visible='false'>
 <b:widget-settings>
 <b:widget-setting name='content'><![CDATA[<div data-title="Son Yayılar" class="custom-posts visually-hidden" data-items="6" data-func="sidebar_temp"></div>]]></b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:include name='JetHtml'/>
+</b:includable>
+</b:widget>
+</b:section>
+<b:section class='position-sticky py-4 top-0' id='sidebar-sticky' itemscope='itemscope'>
+<b:widget id='HTML1' locked='false' title='İlginizi Çekebilir' type='HTML' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='content'><![CDATA[<iframe src="https://feed.mikle.com/widget/v2/158653/?preloader-text=Yükleniyor" height="427px" width="100%" class="fw-iframe" scrolling="hayır " frameborder="0"></iframe>]]></b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
 <b:include name='JetHtml'/>
