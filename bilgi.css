@@ -3387,3 +3387,143 @@ display: none;
 }
 @media screen and (min-width:768px){::-webkit-scrollbar{-webkit-appearance:none;width:5px;height:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(0,0,0,.15);border-radius:10px}::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,.35)}::-webkit-scrollbar-thumb:active{background:rgba(0,0,0,.35)}}
 @media screen and (max-width:1100px){/* Article */ .onIndx.onHm .blogPts >*{flex:0 0 calc(50% - 20px);width:calc(50% - 20px)} .onIndx.onMlt .blogPts >*{flex:0 0 calc(33.33% - 20px);width:calc(33.33% - 20px)} /* Widget */ .itemFt .itm >*, .itemFt .itm >*:last-child{flex:0 0 calc(50% - 20px);width:calc(50% - 20px)} .itemFt .itm >*:last-child{flex-grow:1}
+/*------Layout (No Edit)----------*/
+body#layout {
+background-color: #4f63f0;
+padding: 25px;
+margin: 25px;
+border-radius: 10px;
+}
+body#layout ul {
+list-style-type: none;
+list-style: none;
+}
+body#layout ul li {
+list-style-type: none;
+list-style: none;
+}
+body#layout #mainSett {
+overflow: hidden !important;
+}
+body#layout #mainSett .widget {
+width: 24%;
+float: left;
+display: inline-block;
+margin-right: 1%;
+}
+body#layout #mainSett #ContactForm1 {
+display: none;
+}
+body#layout #mainSett .layout-widget-state.visible {
+display: none;
+}
+body#layout #mainSett .layout-title,
+body#layout #mainSett .layout-widget-description {
+margin: 0 25px 0 0;
+}
+body#layout #header-wrapper,
+body#layout #main-wrapper,
+body#layout #postaAds-wrapper,
+body#layout #footer-wrapper {
+display: inline-block;
+width: 100%;
+}
+body#layout #mainBlog-wrapper {
+width: 60%;
+display: inline-block;
+}
+body#layout #mainSide-wrapper {
+width: 40%;
+float: right;
+}
+body#layout div.section {
+margin: 5px 0 !important;
+box-sizing: border-box;
+background-color: #4f63f0 !important;
+border: 0;
+border-radius: 10px;
+}
+body#layout .section h4 {
+font-size: 20px !important;
+color: #2e3a8e;
+text-transform: uppercase;
+margin: 30px 0 !important;
+text-align: left !important;
+}
+body#layout .section h4:after {
+text-transform: initial;
+color: #656565;
+font-weight: 400;
+}
+body#layout .add_widget {
+border-radius: 10px;
+border: 2px dashed #4354cc;
+}
+body#layout .add_widget a {
+color: #4354cc !important;
+}
+body#layout .widget-wrap3 {
+overflow: hidden;
+background: 0 !important;
+}
+body#layout .widget-content {
+width: auto;
+max-width: none;
+max-height: none;
+margin: 0;
+border: 0;
+border-right: 0;
+text-align: left !important;
+background: #fff;
+border-radius: 10px;
+box-shadow: none;
+}
+body#layout .locked-widget .widget-content {
+background: #fff;
+border-radius: 10px;
+}
+body#layout .layout-widget-description {
+display: none;
+}
+body#layout .widget .widget-content a.editlink {
+right: 10px;
+left: auto;
+}
+body#layout .visibility .editlink {
+opacity: 0;
+background-size: 50% !important;
+}
+body#layout .widget-content.visibility:hover .editlink {
+opacity: 1;
+}
+body#layout .draggable-widget .widget-wrap2 {
+background: #4354cc url(https://www.blogger.com/img/widgets/draggable.png) no-repeat 4px 50% !important;
+border-radius: 10px;
+}
+body#layout .draggable-widget .widget-wrap1:hover .widget-wrap2 {
+background-color: #884ac2 !important;
+}
+body#layout .visibility .layout-widget-state.visible {
+background-image: url(https://www.flaticon.com/svg/vstatic/svg/709/709724.svg?token=exp=1610813599~hmac=f6f7c73ef133504426534ffdd72874c0) !important;
+float: left;
+opacity: 0.5;
+}
+body#layout .visibility .layout-widget-state.not-visible {
+background-image: url(https://www.flaticon.com/svg/vstatic/svg/565/565655.svg?token=exp=1610813599~hmac=02b20f283c8e352a6ed963961480a70b) !important;
+float: left;
+opacity: 0.5;
+}
+body#layout div.layout-widget-description {
+font-size: 11px;
+line-height: 1.2em;
+}
+body#layout div.section .dropregion {
+background: #4354cc;
+border-radius: 10px;
+border-color: #4354cc;
+}
+body#layout #options #ContactForm1,
+body#layout #options #ContactForm1 br {
+display: none;
+}
+/*------Layout (end)----------*/
