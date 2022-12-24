@@ -4,14 +4,8 @@
 <b:include name='themeColor'/>
 <head>
 <b:include name='themeHead'/>
-<include expiration='7d' path='*.css'/>
-<include expiration='7d' path='*.js'/>
-<include expiration='3d' path='*.gif'/>
-<include expiration='3d' path='*.jpeg'/>
-<include expiration='3d' path='*.jpg'/>
-<include expiration='3d' path='*.png'/>
 <b:if cond='!data:view.isLayoutMode'>
-<b:skin><![CDATA[/*<Group description="Header"><Variable name="fxHead" description="Fixed Header" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="logoSize" description="Logo Size" type="length" default="80px" min="80px" max="150px" value="80px"/><Variable name="popSearch" description="Popup Search" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="liveSearch" description="Live Search Results" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Layout"><Variable name="fxLayout" description="Fixed Layout" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="imgRadius" description="Images Corners" type="length" default="10px" min="1px" max="100px" value="10px"/><Variable name="themeColor" description="Dark Mode Default" type="length" default="1px" min="1px" max="2px" value="2px"/><Variable name="darkMode" description="Dark Mode Switcher" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="toTop" description="Scroll to Top Button" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Article"><Variable name="breadcrumb" description="Breadcrumb" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="cmCount" description="Comments Counter" type="length" default="1px" min="1px" max="2px" value="2px"/><Variable name="rPosts" description="Related Posts" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Font"><Variable name="main.font" description="Site Font" type="font" family="Poppins" default="normal normal 14px $(family)" value="normal bold 14px Poppins"/></Group><Group description="Background"><Variable name="background.color" description="Body Background Color" type="color" default="#f7f8f9" value="#f7f8f9"/><Variable name="body.background" description="Body Background" type="background" color="$(background.color)" default="$(color) url(https://blogger.googleusercontent.com/img/a/AVvXsEjiVAdgk1o2TISssKjWv7zhq2_I09liL5mXMYdtmACebwPoeVK4ZnYJ8sxltJ_akq9lVbD_UPeN5pGFTOzKf-3UsmU9FB7FxUypR2EjSmhqTDzHelY1cU2NrUCt3q_CBNrfwAz-LMex3mqlftRQRRckk9bRidYozzQQnPOgHp039GEybjYQkhXf1hAHdw=s16000) repeat fixed top center" value="$(color) none repeat fixed top center"/></Group><Group description="Colors"><Variable name="main.color" description="Main Color" type="color" default="#3d55ef" value="#3d55ef"/><Variable name="child.color" description="Child Color" type="color" default="#1b2982" value="#1b2982"/><Variable name="text.color" description="Text Color" type="color" default="#202124" value="#202124"/><Variable name="link.color" description="Link Color" type="color" default="#000000" value="#000000"/><Variable name="widgetBg" description="Boxed Widgets Background Color" type="color" default="#ffffff" value="#ffffff"/><Variable name="megaBg" description="Boxed Mega Menu Background Color" type="color" default="#f7f7f7" value="#f7f7f7"/><Variable name="linksBg" description="Boxed Links Background Color" type="color" default="#f5f8fa" value="#f5f8fa"/><Variable name="quotesBg" description="Boxed Quotes Background Color" type="color" default="#2a2a2a" value="#2a2a2a"/><Variable name="quotesTc" description="Boxed Quotes Text Color" type="color" default="#fff" value="#ffffff"/><Variable name="bquoteBg" description="Block Quote Background Color" type="color" default="#f5f8fa" value="#f5f8fa"/><Variable name="checkBg" description="Check Msg Background Color" type="color" default="#4ab33c" value="#4ab33c"/><Variable name="infoBg" description="Info Msg Background Color" type="color" default="#1528a4" value="#1528a4"/><Variable name="exclamationBg" description="Exclamation Msg Background Color" type="color" default="#dd9d16" value="#dd9d16"/><Variable name="errorBg" description="Error Msg Background Color" type="color" default="#ef0c0c" value="#ef0c0c"/></Group><Group description="Darkmode Colors"><Variable name="Dmain.color" description="Dark Main Color" type="color" default="#136594" value="#136594"/><Variable name="Dchild.color" description="Dark Child Color" type="color" default="#6010a9" value="#6010a9"/><Variable name="Dbody.bg" description="Dark Body Background Color" type="color" default="#242d4a" value="#242d4a"/><Variable name="DtextColor" description="Dark Text Color" type="color" default="#e7e7e7" value="#e7e7e7"/><Variable name="DlinkColor" description="Boxed Link Dark Background Color" type="color" default="#e7e7e7" value="#e7e7e7"/><Variable name="DwidgetBg" description="Boxed Widgets Dark Background Color" type="color" default="#1d2239" value="#1d2239"/><Variable name="DmegaBg" description="Boxed Mega Menu Dark Background Color" type="color" default="#1d2239" value="#1d2239"/><Variable name="DlinksBg" description="Boxed Links Dark Main Color" type="color" default="#252f59" value="#ffffff"/><Variable name="DborderC" description="Borders Dark Color" type="color" default="#1d2545" value="#1d2545"/><Variable name="DquotesBg" description="Boxed Quotes Dark Background Color" type="color" default="#24272a" value="#24272a"/><Variable name="DbquoteBg" description="Block Quote Dark Background Color" type="color" default="#1d2545" value="#1d2545"/></Group><Variable name="body.background.color" description="Comments Background" hideEditor="true" type="color" default="rgba(255,255,255,0)" value="rgba(255,255,255,0)"/><Variable name="body.title.color" description="Comments Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.text.color" description="Comments Text Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.link.color" description="Comments Link Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.text.font" description="Comments Font 1" hideEditor="true" type="font" default="normal 400 14px Arial, sans-serif !important" value="normal 400 14px Arial, sans-serif !important"/><Variable name="body.action.font.large" description="Comments Font 2" hideEditor="true" type="font" default="normal 700 14px Arial, sans-serif !important" value="normal 700 14px Arial, sans-serif !important"/>*/]]></b:skin>
+<b:skin><![CDATA[/*<Group description="Header"><Variable name="fxHead" description="Fixed Header" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="logoSize" description="Logo Size" type="length" default="80px" min="80px" max="150px" value="143px"/><Variable name="popSearch" description="Popup Search" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="liveSearch" description="Live Search Results" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Layout"><Variable name="fxLayout" description="Fixed Layout" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="imgRadius" description="Images Corners" type="length" default="10px" min="1px" max="100px" value="100px"/><Variable name="themeColor" description="Dark Mode Default" type="length" default="1px" min="1px" max="2px" value="1px"/><Variable name="darkMode" description="Dark Mode Switcher" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="toTop" description="Scroll to Top Button" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Article"><Variable name="breadcrumb" description="Breadcrumb" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="cmCount" description="Comments Counter" type="length" default="1px" min="1px" max="2px" value="2px"/><Variable name="rPosts" description="Related Posts" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Font"><Variable name="main.font" description="Site Font" type="font" family="Poppins" default="normal normal 14px $(family)" value="normal bold 14px Poppins"/></Group><Group description="Background"><Variable name="background.color" description="Body Background Color" type="color" default="#f7f8f9" value="#f7f8f9"/><Variable name="body.background" description="Body Background" type="background" color="$(background.color)" default="$(color) url(https://blogger.googleusercontent.com/img/a/AVvXsEjiVAdgk1o2TISssKjWv7zhq2_I09liL5mXMYdtmACebwPoeVK4ZnYJ8sxltJ_akq9lVbD_UPeN5pGFTOzKf-3UsmU9FB7FxUypR2EjSmhqTDzHelY1cU2NrUCt3q_CBNrfwAz-LMex3mqlftRQRRckk9bRidYozzQQnPOgHp039GEybjYQkhXf1hAHdw=s16000) repeat fixed top center" value="$(color) url(https://blogger.googleusercontent.com/img/a/AVvXsEjiVAdgk1o2TISssKjWv7zhq2_I09liL5mXMYdtmACebwPoeVK4ZnYJ8sxltJ_akq9lVbD_UPeN5pGFTOzKf-3UsmU9FB7FxUypR2EjSmhqTDzHelY1cU2NrUCt3q_CBNrfwAz-LMex3mqlftRQRRckk9bRidYozzQQnPOgHp039GEybjYQkhXf1hAHdw=s16000) repeat fixed top center"/></Group><Group description="Colors"><Variable name="main.color" description="Main Color" type="color" default="#3d55ef" value="#3d55ef"/><Variable name="child.color" description="Child Color" type="color" default="#1b2982" value="#1b2982"/><Variable name="text.color" description="Text Color" type="color" default="#202124" value="#202124"/><Variable name="link.color" description="Link Color" type="color" default="#000000" value="#000000"/><Variable name="widgetBg" description="Boxed Widgets Background Color" type="color" default="#ffffff" value="#ffffff"/><Variable name="megaBg" description="Boxed Mega Menu Background Color" type="color" default="#f7f7f7" value="#f7f7f7"/><Variable name="linksBg" description="Boxed Links Background Color" type="color" default="#f5f8fa" value="#f5f8fa"/><Variable name="quotesBg" description="Boxed Quotes Background Color" type="color" default="#2a2a2a" value="#2a2a2a"/><Variable name="quotesTc" description="Boxed Quotes Text Color" type="color" default="#fff" value="#ffffff"/><Variable name="bquoteBg" description="Block Quote Background Color" type="color" default="#f5f8fa" value="#f5f8fa"/><Variable name="checkBg" description="Check Msg Background Color" type="color" default="#4ab33c" value="#4ab33c"/><Variable name="infoBg" description="Info Msg Background Color" type="color" default="#1528a4" value="#1528a4"/><Variable name="exclamationBg" description="Exclamation Msg Background Color" type="color" default="#dd9d16" value="#dd9d16"/><Variable name="errorBg" description="Error Msg Background Color" type="color" default="#ef0c0c" value="#ef0c0c"/></Group><Group description="Darkmode Colors"><Variable name="Dmain.color" description="Dark Main Color" type="color" default="#136594" value="#136594"/><Variable name="Dchild.color" description="Dark Child Color" type="color" default="#6010a9" value="#6010a9"/><Variable name="Dbody.bg" description="Dark Body Background Color" type="color" default="#242d4a" value="#242d4a"/><Variable name="DtextColor" description="Dark Text Color" type="color" default="#e7e7e7" value="#e7e7e7"/><Variable name="DlinkColor" description="Boxed Link Dark Background Color" type="color" default="#e7e7e7" value="#e7e7e7"/><Variable name="DwidgetBg" description="Boxed Widgets Dark Background Color" type="color" default="#1d2239" value="#1d2239"/><Variable name="DmegaBg" description="Boxed Mega Menu Dark Background Color" type="color" default="#1d2239" value="#1d2239"/><Variable name="DlinksBg" description="Boxed Links Dark Main Color" type="color" default="#252f59" value="#252f59"/><Variable name="DborderC" description="Borders Dark Color" type="color" default="#1d2545" value="#1d2545"/><Variable name="DquotesBg" description="Boxed Quotes Dark Background Color" type="color" default="#24272a" value="#24272a"/><Variable name="DbquoteBg" description="Block Quote Dark Background Color" type="color" default="#1d2545" value="#1d2545"/></Group><Variable name="body.background.color" description="Comments Background" hideEditor="true" type="color" default="rgba(255,255,255,0)" value="rgba(255,255,255,0)"/><Variable name="body.title.color" description="Comments Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.text.color" description="Comments Text Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.link.color" description="Comments Link Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.text.font" description="Comments Font 1" hideEditor="true" type="font" default="normal 400 14px Arial, sans-serif !important" value="normal 400 14px Arial, sans-serif !important"/><Variable name="body.action.font.large" description="Comments Font 2" hideEditor="true" type="font" default="normal 700 14px Arial, sans-serif !important" value="normal 700 14px Arial, sans-serif !important"/>*/]]></b:skin>
 </b:if>
 <link href='https://hamdiphonecomtr.github.io/bilgi.css' rel='stylesheet'/>
 <b:if cond='data:view.isLayoutMode'>
@@ -43,13 +37,7 @@
 <b:includable id='themeHead'>
 <meta expr:content='&quot;text/html; charset=&quot; + data:blog.encoding' http-equiv='Content-Type'/>
 <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes' name='viewport'/>
-<title><b:eval expr='data:view.search.label ? (data:view.title + &quot; - &quot; + data:view.search.label) : data:view.title'/></title><link href='//fonts.gstatic.com' rel='dns-prefetch'/>
-<link href='//dnjs.cloudflare.com' rel='dns-prefetch'/>
-<link href='//1.bp.blogspot.com' rel='dns-prefetch'/>
-<link href='//2.bp.blogspot.com' rel='dns-prefetch'/>
-<link href='//3.bp.blogspot.com' rel='dns-prefetch'/>
-<link href='//4.bp.blogspot.com' rel='dns-prefetch'/>
-<link href='//www.blogger.com' rel='dns-prefetch'/>
+<title><b:eval expr='data:view.search.label ? (data:view.title + &quot; - &quot; + data:view.search.label) : data:view.title'/></title>
 <meta content='blogger' name='generator'/>
 <link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/>
 <b:if cond='data:blog.adultContent'>
@@ -434,7 +422,7 @@
 <b:widget-settings>
 <b:widget-setting name='sorting'>NONE</b:widget-setting>
 <b:widget-setting name='text-0'>darkLogo</b:widget-setting>
-<b:widget-setting name='link-0'>https://hamdiphonecomtr.github.io/hamdiphone.png</b:widget-setting>
+<b:widget-setting name='link-0'>https://hamdiphonecomtr.github.io/kadincalogo.png</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main' var='this'>
 <b:include name='content'/>
@@ -492,11 +480,11 @@ var data = {
 <b:section class='panelLogo' cond='data:widgets.Image any w =&gt; w.sectionId == &quot;panelLogo&quot;' id='panelLogo' name='Panel Logo' showaddelement='yes'>
 <b:widget id='Image3' locked='false' title='' type='Image' version='2' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='displayUrl'>https://hamdiphonecomtr.github.io/hamdiphone.png</b:widget-setting>
-<b:widget-setting name='displayHeight'>33</b:widget-setting>
-<b:widget-setting name='sectionWidth'>70</b:widget-setting>
+<b:widget-setting name='displayUrl'>https://hamdiphonecomtr.github.io/kadincalogo.png</b:widget-setting>
+<b:widget-setting name='displayHeight'>193</b:widget-setting>
+<b:widget-setting name='sectionWidth'>150</b:widget-setting>
 <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
-<b:widget-setting name='displayWidth'>70</b:widget-setting>
+<b:widget-setting name='displayWidth'>150</b:widget-setting>
 <b:widget-setting name='link'/>
 <b:widget-setting name='caption'/>
 </b:widget-settings>
@@ -523,25 +511,75 @@ var data = {
 </b:section>
 <span class='panelClose'><a href='javascript:;' role='button'><i class='fas fa-times'/></a></span></div>
 <b:section class='panelContent' id='panelContent' name='Panel Content' showaddelement='yes'>
-<b:widget id='PopularPosts2' locked='false' title='' type='PopularPosts' visible='true'>
+<b:widget id='PageList1' locked='false' title='' type='PageList' version='2' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='numItemsToShow'>10</b:widget-setting>
-<b:widget-setting name='showThumbnails'>true</b:widget-setting>
-<b:widget-setting name='showSnippets'>false</b:widget-setting>
-<b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+<b:widget-setting name='pageListJson'><![CDATA[{"link1":{"href":"/p/iletisim.html","position":1,"title":"İletişim"},"link0":{"href":"/","position":0,"title":"Ana Sayfa"},"link2":{"href":"/p/itiraf-ediyorum.html","position":2,"title":"İtiraf Ediyorum"}}]]></b:widget-setting>
+<b:widget-setting name='homeTitle'>Ana Sayfa</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:include name='widget-title'/>
+<b:include name='content'/>
+</b:includable>
+<b:includable id='content'>
+<div class='widget-content'>
+<b:include name='pageList'/>
+</div>
+</b:includable>
+<b:includable id='overflowButton'>
+<b:include name='verticalMoreIcon'/>
+</b:includable>
+<b:includable id='overflowablePageList'>
+<div class='overflowable-container'>
+<div class='overflowable-contents'>
+<div class='container'>
+<b:with value='true' var='overflow'>
+<b:with value='&quot;tabs&quot;' var='pageListClass'>
+<b:include name='pageList'/>
+</b:with>
+</b:with>
+</div>
+</div>
+<div class='overflow-button hidden'>
+<b:include name='overflowButton'/>
+</div>
+</div>
+</b:includable>
+<b:includable id='pageLink'>
+<li>
+<b:class cond='data:overflow' name='overflowable-item'/>
+<b:class cond='data:link.isCurrentPage' name='selected'/>
+<a expr:href='data:link.href'><data:link.title/></a>
+</li>
+</b:includable>
+<b:includable id='pageList'>
+<ul>
+<b:class cond='data:pageListClass' expr:name='data:pageListClass'/>
+<b:loop values='data:links' var='link'>
+<b:include name='pageLink'/>
+</b:loop>
+</ul>
+</b:includable>
+</b:widget>
+<b:widget id='FeaturedPost1' locked='false' title='' type='FeaturedPost' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='showSnippet'>true</b:widget-setting>
+<b:widget-setting name='showPostTitle'>true</b:widget-setting>
+<b:widget-setting name='postId'>0</b:widget-setting>
+<b:widget-setting name='showFirstImage'>true</b:widget-setting>
+<b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main' var='this'>
-<b:include name='widget-title'/><div class='widget-content'><div class='posts'>
-<b:loop index='i' values='data:posts' var='post'>
+<b:include name='widget-title'/><div class='widget-content'>
+<b:loop values='data:posts' var='post'>
 <b:include data='post' name='content'/>
-</b:loop></div></div>
+</b:loop></div>
 </b:includable>
 <b:includable id='blogThisShare'><b:comment>Replaced</b:comment></b:includable>
 <b:includable id='bylineByName' var='byline'><b:comment>Replaced</b:comment></b:includable>
 <b:includable id='bylineRegion' var='regionItems'><b:comment>Replaced</b:comment></b:includable>
 <b:includable id='commentsLink'><b:comment>Replaced</b:comment></b:includable>
 <b:includable id='commentsLinkIframe'><b:comment>Replaced</b:comment></b:includable>
-<b:includable id='content' var='post'><div expr:class='&quot;itemWrap item-&quot; + data:i'><div class='post'><div class='postImage'>
+<b:includable id='content' var='post'><div class='post'><div class='postImage'>
 <a expr:href='data:post.url.canonical' expr:title='data:post.title ? data:post.title : data:messages.noTitle'>
 <b:if cond='data:post.featuredImage'>
 <span class='hasImage' expr:data-style='data:post.featuredImage.isYouTube ? resizeImage(data:post.featuredImage.youtubeMaxResDefaultUrl.jsonEscaped, 72, &quot;1:1&quot;) : resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)'/>
@@ -549,13 +587,18 @@ var data = {
 <b:else/>
 <span class='noImage' data-style='https://resources.blogblog.com/img/blank.gif'/>
 </b:if>
-</a></div><div class='postDetails'><h3 class='postTitle'>
+</a></div><div class='postDetails'>
+<b:if cond='data:post.labels'>
+<span class='postCat' expr:data-cat='data:post.labels.first.name'>
+<a expr:href='data:post.labels.first.url'><data:post.labels.first.name/></a>
+</span>
+</b:if><h3 class='postTitle'>
 <a expr:href='data:post.url.canonical' expr:title='data:post.title ? data:post.title : data:messages.noTitle'>
 <b:eval expr='data:post.title ? data:post.title : data:messages.noTitle'/>
 </a></h3>
-<b:if cond='data:widgets.Blog.first.allBylineItems.timestamp and data:widget.sectionId != &quot;topTicker&quot;'><div class='postMeta'>
+<b:if cond='data:widgets.Blog.first.allBylineItems.timestamp'><div class='postMeta'>
 <span class='postDate'><time class='published' expr:datetime='data:post.date.iso8601'/></span></div>
-</b:if></div></div></div>
+</b:if></div></div>
 </b:includable>
 <b:includable id='emailPostIcon'><b:comment>Replaced</b:comment></b:includable>
 <b:includable id='facebookShare'><b:comment>Replaced</b:comment></b:includable>
@@ -584,6 +627,47 @@ var data = {
 <b:includable id='snippetedPostTitle'><b:comment>Replaced</b:comment></b:includable>
 <b:includable id='snippetedPosts'><b:comment>Replaced</b:comment></b:includable>
 </b:widget>
+<b:widget id='Label1' locked='false' title='Kategoriler' type='Label' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
+<b:widget-setting name='display'>CLOUD</b:widget-setting>
+<b:widget-setting name='selectedLabelsList'>Anne ve Çocuk,Bebek,Bebek-Çocuk,Cilt Bakımı,Dekorasyon,Diyet,Ekonomi,Güncel,Hamilelik,Hamilelikte Sağlık,Hamilelikte Yemek,Hayvanlar Alemi,Kimdir,Kişisel Gelişim,Listeler,Nedir,Otomobil,Psikoloji,Saç Bakımı,Sağlık,Sinema,Teknoloji,Yaşam,Çocuk Gelişimi,İlaçlar,İlişkiler</b:widget-setting>
+<b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
+<b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main' var='this'>
+<b:include name='widget-title'/>
+<b:include name='content'/>
+</b:includable>
+<b:includable id='cloud'>
+<b:if cond='data:title contains &quot;isFeatured&quot;'>
+<b:class name='featuredLabel'/>
+<b:loop index='i' values='data:labels' var='label'>
+<b:tag expr:class='&quot;category cat-&quot; + data:i' expr:data-cat='data:label.name + (data:this.showFreqNumbers ? (&quot;/&quot; + data:label.count) : &quot;&quot;)' name='div'/>
+</b:loop>
+<b:else/>
+<b:class name='cloudLabel'/><ul>
+<b:loop values='data:labels' var='label'><li><a class='labelName' expr:data-cat='data:label.name' expr:href='data:label.url'><data:label.name/><b:if cond='data:this.showFreqNumbers'><span class='labelCount'><data:label.count/></span></b:if></a></li>
+</b:loop></ul>
+</b:if>
+</b:includable>
+<b:includable id='content'><div class='widget-content'>
+<b:include cond='data:this.display == &quot;list&quot;' name='list'/>
+<b:include cond='data:this.display == &quot;cloud&quot;' name='cloud'/></div>
+</b:includable>
+<b:includable id='list'>
+<b:if cond='data:title contains &quot;isFeatured&quot;'>
+<b:class name='featuredLabel'/>
+<b:loop index='i' values='data:labels' var='label'>
+<b:tag expr:class='&quot;category cat-&quot; + data:i' expr:data-cat='data:label.name + (data:this.showFreqNumbers ? (&quot;/&quot; + data:label.count) : &quot;&quot;)' name='div'/>
+</b:loop>
+<b:else/>
+<b:class name='listLabel'/><ul>
+<b:loop values='data:labels' var='label'><li><a class='labelName' expr:data-cat='data:label.name' expr:href='data:label.url'><b:if cond='data:this.showFreqNumbers'><span class='labelCount'><data:label.count/></span></b:if><data:label.name/></a></li>
+</b:loop></ul>
+</b:if>
+</b:includable>
+</b:widget>
 </b:section></div></div>
 </b:if>
 <b:if cond='data:skin.vars.popSearch == &quot;2px&quot;'><div class='popSearch wrapper' id='popSearch-wrapper'><div class='searchInner'><form action='/search' method='get'>
@@ -604,11 +688,11 @@ var data = {
 </a></div>
 </b:if>
 <b:section class='headerLogo logo' id='headerLogo' maxwidgets='1' name='Logo &amp; Title' showaddelement='yes'>
-<b:widget id='Header1' locked='false' title='Kadınca Bir Blog (Üstbilgi)' type='Header' visible='true'>
+<b:widget id='Header1' locked='false' title='O Bir Kadın (Üstbilgi)' type='Header' visible='true'>
 <b:widget-settings>
 <b:widget-setting name='displayUrl'/>
 <b:widget-setting name='displayHeight'>0</b:widget-setting>
-<b:widget-setting name='sectionWidth'>150</b:widget-setting>
+<b:widget-setting name='sectionWidth'>-1</b:widget-setting>
 <b:widget-setting name='useImage'>false</b:widget-setting>
 <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
 <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
@@ -637,17 +721,17 @@ var data = {
 <b:section class='mainMenu menu' id='mainMenu' maxwidgets='1' name='Main Menu' showaddelement='yes'>
 <b:widget id='LinkList3' locked='false' title='' type='LinkList' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='link-3'>/p/hakknda.html</b:widget-setting>
+<b:widget-setting name='link-3'>/p/itiraf-ediyorum.html</b:widget-setting>
 <b:widget-setting name='sorting'>NONE</b:widget-setting>
-<b:widget-setting name='link-4'>/p/sitemap.html</b:widget-setting>
-<b:widget-setting name='text-1'>Gizlilik Politikası</b:widget-setting>
-<b:widget-setting name='link-1'>/p/gizlilik-politikas.html</b:widget-setting>
+<b:widget-setting name='link-4'>/p/hakknda.html</b:widget-setting>
+<b:widget-setting name='text-1'>Menü</b:widget-setting>
+<b:widget-setting name='link-1'>#</b:widget-setting>
 <b:widget-setting name='text-0'>Anasayfa</b:widget-setting>
-<b:widget-setting name='link-2'>/p/itiraf-ediyorum.html</b:widget-setting>
-<b:widget-setting name='text-3'>Hakkımızda</b:widget-setting>
+<b:widget-setting name='link-2'>/p/gizlilik-politikas.html</b:widget-setting>
+<b:widget-setting name='text-3'>_İtiraf Ediyorum</b:widget-setting>
 <b:widget-setting name='link-0'>/</b:widget-setting>
-<b:widget-setting name='text-2'>İtiraf Ediyorum</b:widget-setting>
-<b:widget-setting name='text-4'>Sitemap</b:widget-setting>
+<b:widget-setting name='text-2'>_Gizlilik Politikası</b:widget-setting>
+<b:widget-setting name='text-4'>_Hakkımızda</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main' var='this'>
 <b:include name='content'/>
@@ -692,7 +776,7 @@ slider-1[random/4]</b:widget-setting>
 <b:section class='layoutTwo layouts' cond='data:view.isHomepage' id='layout-2' name='layout [2]' showaddelement='yes'>
 <b:widget id='HTML4' locked='false' title='' type='HTML' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='content'>tabs-1[Hamilelik,Edebiyat,Sağlık/4]</b:widget-setting>
+<b:widget-setting name='content'>tabs-1[Hamilelik,Bebek-Çocuk,Sağlık/4]</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
 <b:include name='html-content'/>
@@ -1253,7 +1337,7 @@ slider-1[random/4]</b:widget-setting>
 <b:includable id='threadedComments' var='post'><b:comment>Replaced</b:comment></b:includable>
 <b:includable id='threaded_comment_js' var='post'>
 <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
-<script type='text/javascript'>(function(){var x=<data:post.commentJso/>;var A=<data:post.commentMsgs/>;var D=<data:post.commentConfig/>;var K=null;if(x&amp;&amp;x.length&gt;0){K=parseInt(x[x.length-1].timestamp)+1}var H=function(d){var c=(d&amp;&amp;((d.content&amp;&amp;d.content.$t)||(d.summary&amp;&amp;d.summary.$t)))||&quot;&quot;;if(d&amp;&amp;d.gd$extendedProperty){for(var b in d.gd$extendedProperty){if(d.gd$extendedProperty[b].name==&quot;blogger.contentRemoved&quot;){return&#39;&lt;span class=&quot;deleted-comment&quot;&gt;&#39;+c+&quot;&lt;/span&gt;&quot;}}}return c};var w=function(f){K=null;var j=[];if(f&amp;&amp;f.feed&amp;&amp;f.feed.entry){for(var e=0,b;b=f.feed.entry[e];e++){var c={};var i=/blog-(\d+).post-(\d+)/.exec(b.id.$t);c.id=i?i[2]:null;c.body=H(b);c.timestamp=Date.parse(b.published.$t)+&quot;&quot;;if(b.author&amp;&amp;b.author.constructor===Array){var h=b.author[0];if(h){c.author={name:(h.name?h.name.$t:undefined),profileUrl:(h.uri?h.uri.$t:undefined),avatarUrl:(h.gd$image?h.gd$image.src:undefined)}}}if(b.link){if(b.link[2]){c.link=c.permalink=b.link[2].href}if(b.link[3]){var d=/.*comments\/default\/(\d+)\?.*/.exec(b.link[3].href);if(d&amp;&amp;d[1]){c.parentId=d[1]}}}c.deleteclass=&quot;item-control blog-admin&quot;;if(b.gd$extendedProperty){for(var g in b.gd$extendedProperty){if(b.gd$extendedProperty[g].name==&quot;blogger.itemClass&quot;){c.deleteclass+=&quot; &quot;+b.gd$extendedProperty[g].value}else{if(b.gd$extendedProperty[g].name==&quot;blogger.displayTime&quot;){c.displayTime=b.gd$extendedProperty[g].value}}}}j.push(c)}}return j};var E=function(c){if(M()){var d=D.feed+&quot;?alt=json&amp;v=2&amp;orderby=published&amp;reverse=false&amp;max-results=50&quot;;if(K){d+=&quot;&amp;published-min=&quot;+new Date(K).toISOString()}window.bloggercomments=function(e){var f=w(e);K=f.length&lt;50?null:parseInt(f[f.length-1].timestamp)+1;c(f);window.bloggercomments=null};d+=&quot;&amp;callback=bloggercomments&quot;;var b=document.createElement(&quot;script&quot;);b.type=&quot;text/javascript&quot;;b.src=d;document.getElementsByTagName(&quot;head&quot;)[0].appendChild(b)}};var M=function(){return !!K};var O=function(b,c){if(&quot;iswriter&quot;==b){var d=!!c.author&amp;&amp;c.author.name==D.authorName&amp;&amp;c.author.profileUrl==D.authorUrl;return d?&quot;true&quot;:&quot;&quot;}else{if(&quot;deletelink&quot;==b){return D.baseUri+&quot;/delete-comment.g?blogID=&quot;+D.blogId+&quot;&amp;postID=&quot;+c.id}else{if(&quot;deleteclass&quot;==b){return c.deleteclass}}}return&quot;&quot;};var F=null;var J=null;var z=undefined;var L=function(b,c){if(F==null){F=document.getElementById(&quot;comment-editor&quot;);if(F!=null){F.height=&quot;250px&quot;;F.style.display=&quot;block&quot;;J=F.src.split(&quot;#&quot;)}}if(F&amp;&amp;(b!==z)){F.src=&quot;&quot;;document.getElementById(c).insertBefore(F,null);F.src=J[0]+(b?&quot;&amp;parentID=&quot;+b:&quot;&quot;)+&quot;#&quot;+J[1];z=b}};var N=(window.location.hash||&quot;#&quot;).substring(1);var t,B;if(/^comment-form_/.test(N)){t=N.substring(&quot;comment-form_&quot;.length)}else{if(/^c[0-9]+$/.test(N)){B=N.substring(1)}}var I={maxDepth:D.maxThreadDepth};var G={id:D.postId,data:x,loadNext:E,hasMore:M,getMeta:O,onReply:L,rendered:true,initComment:B,initReplyThread:t,config:I,messages:A};var y=function(){if(window.goog&amp;&amp;window.goog.comments){var b=document.getElementById(&quot;comment-holder&quot;);window.goog.comments.render(b,G)}};if(window.goog&amp;&amp;window.goog.comments){y()}else{window.goog=window.goog||{};window.goog.comments=window.goog.comments||{};window.goog.comments.loadQueue=window.goog.comments.loadQueue||[];window.goog.comments.loadQueue.push(y)}})();</script>
+<script type='text/javascript'>(function(){var D=<data:post.commentJso/>;var J=<data:post.commentMsgs/>;var t=<data:post.commentConfig/>;var I=null;if(D&amp;&amp;D.length&gt;0){I=parseInt(D[D.length-1].timestamp)+1}var C=function(c){var b=(c&amp;&amp;((c.content&amp;&amp;c.content.$t)||(c.summary&amp;&amp;c.summary.$t)))||&quot;&quot;;if(c&amp;&amp;c.gd$extendedProperty){for(var d in c.gd$extendedProperty){if(c.gd$extendedProperty[d].name==&quot;blogger.contentRemoved&quot;){return&#39;&lt;span class=&quot;deleted-comment&quot;&gt;&#39;+b+&quot;&lt;/span&gt;&quot;}}}return b};var z=function(g){I=null;var c=[];if(g&amp;&amp;g.feed&amp;&amp;g.feed.entry){for(var f=0,b;b=g.feed.entry[f];f++){var d={};var j=/blog-(\d+).post-(\d+)/.exec(b.id.$t);d.id=j?j[2]:null;d.body=C(b);d.timestamp=Date.parse(b.published.$t)+&quot;&quot;;if(b.author&amp;&amp;b.author.constructor===Array){var i=b.author[0];if(i){d.author={name:(i.name?i.name.$t:undefined),profileUrl:(i.uri?i.uri.$t:undefined),avatarUrl:(i.gd$image?i.gd$image.src:undefined)}}}if(b.link){if(b.link[2]){d.link=d.permalink=b.link[2].href}if(b.link[3]){var e=/.*comments\/default\/(\d+)\?.*/.exec(b.link[3].href);if(e&amp;&amp;e[1]){d.parentId=e[1]}}}d.deleteclass=&quot;item-control blog-admin&quot;;if(b.gd$extendedProperty){for(var h in b.gd$extendedProperty){if(b.gd$extendedProperty[h].name==&quot;blogger.itemClass&quot;){d.deleteclass+=&quot; &quot;+b.gd$extendedProperty[h].value}else{if(b.gd$extendedProperty[h].name==&quot;blogger.displayTime&quot;){d.displayTime=b.gd$extendedProperty[h].value}}}}c.push(d)}}return c};var y=function(b){if(M()){var c=t.feed+&quot;?alt=json&amp;v=2&amp;orderby=published&amp;reverse=false&amp;max-results=50&quot;;if(I){c+=&quot;&amp;published-min=&quot;+new Date(I).toISOString()}window.bloggercomments=function(f){var e=z(f);I=e.length&lt;50?null:parseInt(e[e.length-1].timestamp)+1;b(e);window.bloggercomments=null};c+=&quot;&amp;callback=bloggercomments&quot;;var d=document.createElement(&quot;script&quot;);d.type=&quot;text/javascript&quot;;d.src=c;document.getElementsByTagName(&quot;head&quot;)[0].appendChild(d)}};var M=function(){return !!I};var O=function(d,b){if(&quot;iswriter&quot;==d){var c=!!b.author&amp;&amp;b.author.name==t.authorName&amp;&amp;b.author.profileUrl==t.authorUrl;return c?&quot;true&quot;:&quot;&quot;}else{if(&quot;deletelink&quot;==d){return t.baseUri+&quot;/delete-comment.g?blogID=&quot;+t.blogId+&quot;&amp;postID=&quot;+b.id}else{if(&quot;deleteclass&quot;==d){return b.deleteclass}}}return&quot;&quot;};var A=null;var F=null;var H=undefined;var L=function(c,b){if(A==null){A=document.getElementById(&quot;comment-editor&quot;);if(A!=null){A.height=&quot;250px&quot;;A.style.display=&quot;block&quot;;F=A.src.split(&quot;#&quot;)}}if(A&amp;&amp;(c!==H)){A.src=&quot;&quot;;document.getElementById(b).insertBefore(A,null);A.src=F[0]+(c?&quot;&amp;parentID=&quot;+c:&quot;&quot;)+&quot;#&quot;+F[1];H=c}};var N=(window.location.hash||&quot;#&quot;).substring(1);var x,r;if(/^comment-form_/.test(N)){x=N.substring(&quot;comment-form_&quot;.length)}else{if(/^c[0-9]+$/.test(N)){r=N.substring(1)}}var E={maxDepth:t.maxThreadDepth};var B={id:t.postId,data:D,loadNext:y,hasMore:M,getMeta:O,onReply:L,rendered:true,initComment:r,initReplyThread:x,config:E,messages:J};var G=function(){if(window.goog&amp;&amp;window.goog.comments){var b=document.getElementById(&quot;comment-holder&quot;);window.goog.comments.render(b,B)}};if(window.goog&amp;&amp;window.goog.comments){G()}else{window.goog=window.goog||{};window.goog.comments=window.goog.comments||{};window.goog.comments.loadQueue=window.goog.comments.loadQueue||[];window.goog.comments.loadQueue.push(G)}})();</script>
 </b:includable>
 <b:includable id='threaded_comments' var='post'><div class='comments' id='comments'>
 <a name='comments'/><h4><data:post.commentLabelFull/>:</h4><div class='comments-content'>
@@ -1283,12 +1367,12 @@ slider-1[random/4]</b:widget-setting>
 &lt;div class=&#39;widget-heading&#39;&gt;
 &lt;/div&gt;
 &lt;div class=&#39;widget-content featuredLabel&#39;&gt;
-&lt;div class=&#39;category cat-1&#39; data-cat=&#39;Sinema&#39;&gt;&lt;/div&gt;
+&lt;div class=&#39;category cat-1&#39; data-cat=&#39;Güncel&#39;&gt;&lt;/div&gt;
 &lt;div class=&#39;category cat-2&#39; data-cat=&#39;Hamilelik&#39;&gt;&lt;/div&gt;
 &lt;div class=&#39;category cat-3&#39; data-cat=&#39;Sağlık&#39;&gt;&lt;/div&gt;
-&lt;div class=&#39;category cat-4&#39; data-cat=&#39;İnternet&#39;&gt;&lt;/div&gt;
+&lt;div class=&#39;category cat-4&#39; data-cat=&#39;Bebek-Çocuk&#39;&gt;&lt;/div&gt;
 &lt;div class=&#39;category cat-5&#39; data-cat=&#39;Yaşam&#39;&gt;&lt;/div&gt;
-&lt;div class=&#39;category cat-6&#39; data-cat=&#39;Kimdir&#39;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</b:widget-setting>
+&lt;div class=&#39;category cat-6&#39; data-cat=&#39;Teknoloji&#39;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
 <b:include name='html-content'/>
@@ -1331,21 +1415,39 @@ comments</b:widget-setting>
 <b:section class='footerCol' id='footerCol' maxwidgets='1' name='Footer Mono Column' showaddelement='yes'/>
 </b:if>
 <b:section class='footerCols' id='footerCols' maxwidgets='2' name='Footer Multi Columns' showaddelement='yes'>
-<b:widget id='ContactForm2' locked='false' title='İletişim' type='ContactForm' visible='true'>
+<b:widget id='Image1' locked='false' title='Kadınca Bir Blog' type='Image' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='displayUrl'>https://hamdiphonecomtr.github.io/kadincalogo.png</b:widget-setting>
+<b:widget-setting name='displayHeight'>193</b:widget-setting>
+<b:widget-setting name='sectionWidth'>150</b:widget-setting>
+<b:widget-setting name='shrinkToFit'>true</b:widget-setting>
+<b:widget-setting name='displayWidth'>150</b:widget-setting>
+<b:widget-setting name='link'/>
+<b:widget-setting name='caption'><![CDATA[Kadın Sağlığı, Bebek, Çocuk, Hamilelik <br> Konuları Hakkında Bilgi Vermeyi Hedefleyen <br> Bilgi Paylaşım Platformu.]]></b:widget-setting>
+</b:widget-settings>
 <b:includable id='main' var='this'>
 <b:include name='widget-title'/>
 <b:include name='content'/>
 </b:includable>
-<b:includable id='content'><div class='widget-content contact-form-widget'><div class='form'><form name='contact-form'>
-<input class='contact-form-name' expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' expr:placeholder='data:contactFormNameMsg' name='name' size='30' type='text' value=''/>
-<input class='contact-form-email' expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' expr:placeholder='data:contactFormEmailMsg + &quot;*&quot;' name='email' size='30' type='text' value=''/>
-<textarea class='contact-form-email-message' cols='25' expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;' expr:placeholder='data:contactFormMessageMsg + &quot;*&quot;' name='email-message' rows='5'/>
-<input class='contact-form-button contact-form-button-submit' expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;' expr:value='data:contactFormSendMsg' type='button'/><p class='contact-form-error-message' expr:id='data:widget.instanceId + &quot;_contact-form-error-message&quot;'/><p class='contact-form-success-message' expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;'/></form></div></div>
+<b:includable id='content'><div class='widget-content'>
+<b:if cond='data:widget.sectionId in [&quot;footerCol&quot;,&quot;footerCols&quot;]'>
+<a class='footerLogo' expr:href='data:blog.homepageUrl'>
+<img expr:alt='data:blog.title' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl'/>
+</a>
+<b:if cond='data:caption'><p class='caption'><data:caption/></p></b:if>
+<b:if cond='data:link'><span class='info'><data:link/></span></b:if>
+<b:else/>
+<b:tag cond='data:link' expr:href='data:link' name='a'>
+<img expr:alt='data:blog.title' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl'/>
+</b:tag>
+<b:if cond='data:caption'><p class='caption'><data:caption/></p>
+</b:if>
+</b:if></div>
 </b:includable>
 </b:widget>
 <b:widget id='PopularPosts1' locked='false' title='En Çok Okunanlar' type='PopularPosts' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='numItemsToShow'>3</b:widget-setting>
+<b:widget-setting name='numItemsToShow'>2</b:widget-setting>
 <b:widget-setting name='showThumbnails'>false</b:widget-setting>
 <b:widget-setting name='showSnippets'>false</b:widget-setting>
 <b:widget-setting name='timeRange'>LAST_WEEK</b:widget-setting>
@@ -1445,8 +1547,8 @@ comments</b:widget-setting>
 <b:if cond='data:skin.vars.toTop == &quot;2px&quot;'><div class='toTop' expr:data-trans='data:skin.vars.darkMode == &quot;1px&quot; ? &quot;disabled&quot; : &quot;&quot;'>
 <a href='javascript:;' role='button'/></div>
 </b:if>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js' type='text/javascript'/>
-<script src='https://kenwheeler.github.io/slick/slick/slick.js' type='text/javascript'/>
+<script src='//hamdiphonecomtr.github.io/jquery.min.js' type='text/javascript'/>
+<script src='//hamdiphonecomtr.github.io/bilgislick.js' type='text/javascript'/>
 <script type='text/javascript'>var fix={viewAll:&quot;Tümünü göster&quot;,noResults:&quot;Sonuç bulunamadı&quot;,noTitle:&quot;Başlık yok&quot;,locLang:&quot;tr&quot;,lanDir:!1,liveSearch:!0,fxLayout:!0,fxHead:!1};</script>
 <script src='//hamdiphonecomtr.github.io/bilgitime.js'/>
 <script type='text/javascript'/>
