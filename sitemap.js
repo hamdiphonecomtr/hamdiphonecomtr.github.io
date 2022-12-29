@@ -7,7 +7,7 @@
 
 // global variables
    var sortBy = "datenewest";         // default value for sorting ToC
-   var tocLoaded = false;           // true if feed is read and ToC can be displayed
+   var tocLoaded = true;           // true if feed is read and ToC can be displayed
    var numChars = 250;              // number of characters in post summary
    var postFilter = '';             // default filter value
    var tocdiv = document.getElementById("bp_toc"); //the toc container
@@ -29,7 +29,7 @@ function loadtoc(json) {
          var nextjsoncall = document.createElement('script');
          nextjsoncall.type = 'text/javascript';
          startindex=totalEntires+1;
-         nextjsoncall.setAttribute("src", "/feeds/posts/summary?start-index=" + startindex + "&max-results=500&alt=json-in-script&callback=loadtoc");
+         nextjsoncall.setAttribute("src", "/feeds/posts/summary?start-index=" + startindex + "&max-results=99999&alt=json-in-script&callback=loadtoc");
          tocdiv.appendChild(nextjsoncall);
          }
       // main loop gets all the entries from the feed
@@ -74,7 +74,7 @@ function loadtoc(json) {
             var pll = '';
             if ("category" in entry) {
                for (var k = 0; k < entry.category.length; k++) {
-                  pll += '<a href="javascript:filterPosts(\'' + entry.category[k].term + '\');" title="Click here to select all posts with label \'' + entry.category[k].term + '\'">' + entry.category[k].term + '</a>,  ';
+                  pll += '<a href="javascript:filterPosts(\'' + entry.category[k].term + '\');" title="Gönderileri seçmek için buraya tıklayın \'' + entry.category[k].term + '\'">' + entry.category[k].term + '</a>,  ';
                }
             var l = pll.lastIndexOf(',');
             if (l != -1) { pll = pll.substring(0,l); }
@@ -102,12 +102,7 @@ function loadtoc(json) {
    sortPosts(sortBy);
    tocLoaded = true;
 }
-
-
-
 // filter and sort functions
-
-
 function filterPosts(filter) {
 // This function changes the filter
 // and displays the filtered list of posts
@@ -163,12 +158,12 @@ function displayToc(filter) {
 // this function creates a three-column table and adds it to the screen
    var numDisplayed = 0;
    var tocTable = '';
-   var tocHead1 = 'POST TITLE';
-   var tocTool1 = 'Click to sort by title';
-   var tocHead2 = 'POST DATE';
-   var tocTool2 = 'Click to sort by date';
-   var tocHead3 = 'LABELS';
-   var tocTool3 = '';
+   var tocHead1 = 'Yayın Başlığı';
+   var tocTool1 = 'Başlığa göre sırala';
+   var tocHead2 = 'Tarih';
+   var tocTool2 = 'Tarihe göre sırala';
+   var tocHead3 = 'Kategori';
+   var tocTool3 = 'Kategoriye göre sırala';
    if (sortBy == "titleasc") { 
       tocTool1 += ' (descending)';
       tocTool2 += ' (newest first)';
@@ -250,5 +245,5 @@ function hideToc() {
   var tocdiv = document.getElementById("toc");
   tocdiv.innerHTML = '';
   var toclink = document.getElementById("toclink");
-  toclink.innerHTML = '<a href="#" onclick="scroll(0,0); showToc(); Effect.toggle('+"'toc-result','blind');"+'">» Show Table of Contents</a> <img src="http://chenkaie.blog.googlepages.com/new_1.gif"/>';
+  toclink.innerHTML = '<a href="#" onclick="scroll(0,0); showToc(); Effect.toggle('+"'toc-result','blind');"+'">» İçindekileri Göster</a> <img src="http://chenkaie.blog.googlepages.com/new_1.gif"/>';
 }
