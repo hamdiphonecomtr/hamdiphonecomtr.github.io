@@ -5,9 +5,9 @@
 <head>
 <b:include name='themeHead'/>
 <b:if cond='!data:view.isLayoutMode'>
-<b:skin><![CDATA[/*<Group description="Header"><Variable name="fxHead" description="Fixed Header" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="logoSize" description="Logo Size" type="length" default="80px" min="80px" max="150px" value="143px"/><Variable name="popSearch" description="Popup Search" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="liveSearch" description="Live Search Results" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Layout"><Variable name="fxLayout" description="Fixed Layout" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="imgRadius" description="Images Corners" type="length" default="10px" min="1px" max="100px" value="100px"/><Variable name="themeColor" description="Dark Mode Default" type="length" default="1px" min="1px" max="2px" value="1px"/><Variable name="darkMode" description="Dark Mode Switcher" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="toTop" description="Scroll to Top Button" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Article"><Variable name="breadcrumb" description="Breadcrumb" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="cmCount" description="Comments Counter" type="length" default="1px" min="1px" max="2px" value="2px"/><Variable name="rPosts" description="Related Posts" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Font"><Variable name="main.font" description="Site Font" type="font" family="Poppins" default="normal normal 14px $(family)" value="normal bold 14px Poppins"/></Group><Group description="Background"><Variable name="background.color" description="Body Background Color" type="color" default="#f7f8f9" value="#f7f8f9"/><Variable name="body.background" description="Body Background" type="background" color="$(background.color)" default="$(color) url(https://blogger.googleusercontent.com/img/a/AVvXsEjiVAdgk1o2TISssKjWv7zhq2_I09liL5mXMYdtmACebwPoeVK4ZnYJ8sxltJ_akq9lVbD_UPeN5pGFTOzKf-3UsmU9FB7FxUypR2EjSmhqTDzHelY1cU2NrUCt3q_CBNrfwAz-LMex3mqlftRQRRckk9bRidYozzQQnPOgHp039GEybjYQkhXf1hAHdw=s16000) repeat fixed top center" value="$(color) url(https://blogger.googleusercontent.com/img/a/AVvXsEjiVAdgk1o2TISssKjWv7zhq2_I09liL5mXMYdtmACebwPoeVK4ZnYJ8sxltJ_akq9lVbD_UPeN5pGFTOzKf-3UsmU9FB7FxUypR2EjSmhqTDzHelY1cU2NrUCt3q_CBNrfwAz-LMex3mqlftRQRRckk9bRidYozzQQnPOgHp039GEybjYQkhXf1hAHdw=s16000) repeat fixed top center"/></Group><Group description="Colors"><Variable name="main.color" description="Main Color" type="color" default="#3d55ef" value="#3d55ef"/><Variable name="child.color" description="Child Color" type="color" default="#1b2982" value="#1b2982"/><Variable name="text.color" description="Text Color" type="color" default="#202124" value="#202124"/><Variable name="link.color" description="Link Color" type="color" default="#000000" value="#000000"/><Variable name="widgetBg" description="Boxed Widgets Background Color" type="color" default="#ffffff" value="#ffffff"/><Variable name="megaBg" description="Boxed Mega Menu Background Color" type="color" default="#f7f7f7" value="#f7f7f7"/><Variable name="linksBg" description="Boxed Links Background Color" type="color" default="#f5f8fa" value="#f5f8fa"/><Variable name="quotesBg" description="Boxed Quotes Background Color" type="color" default="#2a2a2a" value="#2a2a2a"/><Variable name="quotesTc" description="Boxed Quotes Text Color" type="color" default="#fff" value="#ffffff"/><Variable name="bquoteBg" description="Block Quote Background Color" type="color" default="#f5f8fa" value="#f5f8fa"/><Variable name="checkBg" description="Check Msg Background Color" type="color" default="#4ab33c" value="#4ab33c"/><Variable name="infoBg" description="Info Msg Background Color" type="color" default="#1528a4" value="#1528a4"/><Variable name="exclamationBg" description="Exclamation Msg Background Color" type="color" default="#dd9d16" value="#dd9d16"/><Variable name="errorBg" description="Error Msg Background Color" type="color" default="#ef0c0c" value="#ef0c0c"/></Group><Group description="Darkmode Colors"><Variable name="Dmain.color" description="Dark Main Color" type="color" default="#136594" value="#136594"/><Variable name="Dchild.color" description="Dark Child Color" type="color" default="#6010a9" value="#6010a9"/><Variable name="Dbody.bg" description="Dark Body Background Color" type="color" default="#242d4a" value="#242d4a"/><Variable name="DtextColor" description="Dark Text Color" type="color" default="#e7e7e7" value="#e7e7e7"/><Variable name="DlinkColor" description="Boxed Link Dark Background Color" type="color" default="#e7e7e7" value="#e7e7e7"/><Variable name="DwidgetBg" description="Boxed Widgets Dark Background Color" type="color" default="#1d2239" value="#1d2239"/><Variable name="DmegaBg" description="Boxed Mega Menu Dark Background Color" type="color" default="#1d2239" value="#1d2239"/><Variable name="DlinksBg" description="Boxed Links Dark Main Color" type="color" default="#252f59" value="#252f59"/><Variable name="DborderC" description="Borders Dark Color" type="color" default="#1d2545" value="#1d2545"/><Variable name="DquotesBg" description="Boxed Quotes Dark Background Color" type="color" default="#24272a" value="#24272a"/><Variable name="DbquoteBg" description="Block Quote Dark Background Color" type="color" default="#1d2545" value="#1d2545"/></Group><Variable name="body.background.color" description="Comments Background" hideEditor="true" type="color" default="rgba(255,255,255,0)" value="rgba(255,255,255,0)"/><Variable name="body.title.color" description="Comments Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.text.color" description="Comments Text Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.link.color" description="Comments Link Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.text.font" description="Comments Font 1" hideEditor="true" type="font" default="normal 400 14px Arial, sans-serif !important" value="normal 400 14px Arial, sans-serif !important"/><Variable name="body.action.font.large" description="Comments Font 2" hideEditor="true" type="font" default="normal 700 14px Arial, sans-serif !important" value="normal 700 14px Arial, sans-serif !important"/>*/]]></b:skin>
+<b:skin><![CDATA[/*<Group description="Header"><Variable name="fxHead" description="Fixed Header" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="logoSize" description="Logo Size" type="length" default="80px" min="80px" max="150px" value="143px"/><Variable name="popSearch" description="Popup Search" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="liveSearch" description="Live Search Results" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Layout"><Variable name="fxLayout" description="Fixed Layout" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="imgRadius" description="Images Corners" type="length" default="10px" min="1px" max="100px" value="100px"/><Variable name="themeColor" description="Dark Mode Default" type="length" default="1px" min="1px" max="2px" value="2px"/><Variable name="darkMode" description="Dark Mode Switcher" type="length" default="2px" min="1px" max="2px" value="1px"/><Variable name="toTop" description="Scroll to Top Button" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Article"><Variable name="breadcrumb" description="Breadcrumb" type="length" default="2px" min="1px" max="2px" value="2px"/><Variable name="cmCount" description="Comments Counter" type="length" default="1px" min="1px" max="2px" value="2px"/><Variable name="rPosts" description="Related Posts" type="length" default="2px" min="1px" max="2px" value="2px"/></Group><Group description="Font"><Variable name="main.font" description="Site Font" type="font" family="Poppins" default="normal normal 14px $(family)" value="normal bold 14px Poppins"/></Group><Group description="Background"><Variable name="background.color" description="Body Background Color" type="color" default="#f7f8f9" value="#f7f8f9"/><Variable name="body.background" description="Body Background" type="background" color="$(background.color)" default="$(color) url(https://blogger.googleusercontent.com/img/a/AVvXsEjiVAdgk1o2TISssKjWv7zhq2_I09liL5mXMYdtmACebwPoeVK4ZnYJ8sxltJ_akq9lVbD_UPeN5pGFTOzKf-3UsmU9FB7FxUypR2EjSmhqTDzHelY1cU2NrUCt3q_CBNrfwAz-LMex3mqlftRQRRckk9bRidYozzQQnPOgHp039GEybjYQkhXf1hAHdw=s16000) repeat fixed top center" value="$(color) url(https://blogger.googleusercontent.com/img/a/AVvXsEjiVAdgk1o2TISssKjWv7zhq2_I09liL5mXMYdtmACebwPoeVK4ZnYJ8sxltJ_akq9lVbD_UPeN5pGFTOzKf-3UsmU9FB7FxUypR2EjSmhqTDzHelY1cU2NrUCt3q_CBNrfwAz-LMex3mqlftRQRRckk9bRidYozzQQnPOgHp039GEybjYQkhXf1hAHdw=s16000) repeat fixed top center"/></Group><Group description="Colors"><Variable name="main.color" description="Main Color" type="color" default="#3d55ef" value="#3d55ef"/><Variable name="child.color" description="Child Color" type="color" default="#1b2982" value="#1b2982"/><Variable name="text.color" description="Text Color" type="color" default="#202124" value="#202124"/><Variable name="link.color" description="Link Color" type="color" default="#000000" value="#000000"/><Variable name="widgetBg" description="Boxed Widgets Background Color" type="color" default="#ffffff" value="#ffffff"/><Variable name="megaBg" description="Boxed Mega Menu Background Color" type="color" default="#f7f7f7" value="#f7f7f7"/><Variable name="linksBg" description="Boxed Links Background Color" type="color" default="#f5f8fa" value="#f5f8fa"/><Variable name="quotesBg" description="Boxed Quotes Background Color" type="color" default="#2a2a2a" value="#2a2a2a"/><Variable name="quotesTc" description="Boxed Quotes Text Color" type="color" default="#fff" value="#ffffff"/><Variable name="bquoteBg" description="Block Quote Background Color" type="color" default="#f5f8fa" value="#f5f8fa"/><Variable name="checkBg" description="Check Msg Background Color" type="color" default="#4ab33c" value="#1cbb8c"/><Variable name="infoBg" description="Info Msg Background Color" type="color" default="#1528a4" value="#1528a4"/><Variable name="exclamationBg" description="Exclamation Msg Background Color" type="color" default="#dd9d16" value="#dd9d16"/><Variable name="errorBg" description="Error Msg Background Color" type="color" default="#ef0c0c" value="#1cbb8c"/></Group><Group description="Darkmode Colors"><Variable name="Dmain.color" description="Dark Main Color" type="color" default="#136594" value="#136594"/><Variable name="Dchild.color" description="Dark Child Color" type="color" default="#6010a9" value="#1cbb8c"/><Variable name="Dbody.bg" description="Dark Body Background Color" type="color" default="#242d4a" value="#242d4a"/><Variable name="DtextColor" description="Dark Text Color" type="color" default="#e7e7e7" value="#e7e7e7"/><Variable name="DlinkColor" description="Boxed Link Dark Background Color" type="color" default="#e7e7e7" value="#e7e7e7"/><Variable name="DwidgetBg" description="Boxed Widgets Dark Background Color" type="color" default="#1d2239" value="#1d2239"/><Variable name="DmegaBg" description="Boxed Mega Menu Dark Background Color" type="color" default="#1d2239" value="#1d2239"/><Variable name="DlinksBg" description="Boxed Links Dark Main Color" type="color" default="#252f59" value="#252f59"/><Variable name="DborderC" description="Borders Dark Color" type="color" default="#1d2545" value="#1d2545"/><Variable name="DquotesBg" description="Boxed Quotes Dark Background Color" type="color" default="#24272a" value="#24272a"/><Variable name="DbquoteBg" description="Block Quote Dark Background Color" type="color" default="#1d2545" value="#1d2545"/></Group><Variable name="body.background.color" description="Comments Background" hideEditor="true" type="color" default="rgba(255,255,255,0)" value="rgba(255,255,255,0)"/><Variable name="body.title.color" description="Comments Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.text.color" description="Comments Text Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.link.color" description="Comments Link Color" hideEditor="true" type="color" default="$(main.color)" value="#136594"/><Variable name="body.text.font" description="Comments Font 1" hideEditor="true" type="font" default="normal 400 14px Arial, sans-serif !important" value="normal 400 14px Arial, sans-serif !important"/><Variable name="body.action.font.large" description="Comments Font 2" hideEditor="true" type="font" default="normal 700 14px Arial, sans-serif !important" value="normal 700 14px Arial, sans-serif !important"/>*/]]></b:skin>
 </b:if>
-<link href='https://hamdiphonecomtr.github.io/bilgi.css' rel='stylesheet'/>
+<link href='//hamdiphonecomtr.github.io/bilgi.css' rel='stylesheet'/>
 <b:if cond='data:view.isLayoutMode'>
 </b:if>
 <b:defaultmarkups>
@@ -451,9 +451,24 @@ var data = {
 </b:widget>
 <b:widget id='LinkList4' locked='true' title='Category Filter' type='LinkList' version='2' visible='true'>
 <b:widget-settings>
+<b:widget-setting name='text-10'>Gündem</b:widget-setting>
+<b:widget-setting name='sorting'>NONE</b:widget-setting>
+<b:widget-setting name='link-1'>#dd9d16</b:widget-setting>
+<b:widget-setting name='link-13'>#dd9d16</b:widget-setting>
+<b:widget-setting name='link-2'>#dd9d16</b:widget-setting>
+<b:widget-setting name='link-12'>#dd9d16</b:widget-setting>
+<b:widget-setting name='link-0'>#dd9d16</b:widget-setting>
+<b:widget-setting name='link-14'>#dd9d16</b:widget-setting>
+<b:widget-setting name='link-11'>#dd9d16</b:widget-setting>
+<b:widget-setting name='link-10'>#dd9d16</b:widget-setting>
+<b:widget-setting name='text-9'>Haber</b:widget-setting>
+<b:widget-setting name='link-9'>#dd9d16</b:widget-setting>
+<b:widget-setting name='text-8'>Video</b:widget-setting>
+<b:widget-setting name='link-7'>#dd9d16</b:widget-setting>
+<b:widget-setting name='link-8'>#dd9d16</b:widget-setting>
 <b:widget-setting name='link-5'>#dd9d16</b:widget-setting>
-<b:widget-setting name='link-6'>#FF1493</b:widget-setting>
-<b:widget-setting name='link-3'>darkorchid</b:widget-setting>
+<b:widget-setting name='link-6'>#dd9d16</b:widget-setting>
+<b:widget-setting name='link-3'>#dd9d16</b:widget-setting>
 <b:widget-setting name='link-4'>#dd9d16</b:widget-setting>
 <b:widget-setting name='text-1'>Yaşam</b:widget-setting>
 <b:widget-setting name='text-0'>Hamilelik</b:widget-setting>
@@ -461,11 +476,12 @@ var data = {
 <b:widget-setting name='text-2'>İnternet</b:widget-setting>
 <b:widget-setting name='text-5'>Sağlık</b:widget-setting>
 <b:widget-setting name='text-4'>Edebiyat</b:widget-setting>
+<b:widget-setting name='text-7'>YouTube</b:widget-setting>
 <b:widget-setting name='text-6'>Kimdir</b:widget-setting>
-<b:widget-setting name='sorting'>NONE</b:widget-setting>
-<b:widget-setting name='link-1'>darkorange</b:widget-setting>
-<b:widget-setting name='link-2'>red</b:widget-setting>
-<b:widget-setting name='link-0'>#4ab33c</b:widget-setting>
+<b:widget-setting name='text-11'>Galeri</b:widget-setting>
+<b:widget-setting name='text-12'>Foto</b:widget-setting>
+<b:widget-setting name='text-13'>Güncel</b:widget-setting>
+<b:widget-setting name='text-14'>Otomobil</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main' var='this'>
 <b:include name='widget-title'/>
@@ -688,7 +704,7 @@ var data = {
 </a></div>
 </b:if>
 <b:section class='headerLogo logo' id='headerLogo' maxwidgets='1' name='Logo &amp; Title' showaddelement='yes'>
-<b:widget id='Header1' locked='false' title='O Bir Kadın (Üstbilgi)' type='Header' visible='true'>
+<b:widget id='Header1' locked='false' title='Bilgi Veren Blog (Üstbilgi)' type='Header' visible='true'>
 <b:widget-settings>
 <b:widget-setting name='displayUrl'/>
 <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -721,17 +737,23 @@ var data = {
 <b:section class='mainMenu menu' id='mainMenu' maxwidgets='1' name='Main Menu' showaddelement='yes'>
 <b:widget id='LinkList3' locked='false' title='' type='LinkList' visible='true'>
 <b:widget-settings>
+<b:widget-setting name='link-7'>https://hamdiphone.dukkan.im/</b:widget-setting>
+<b:widget-setting name='link-5'>/p/arsiv.html</b:widget-setting>
+<b:widget-setting name='link-6'>/p/iletisim.html</b:widget-setting>
 <b:widget-setting name='link-3'>/p/itiraf-ediyorum.html</b:widget-setting>
-<b:widget-setting name='sorting'>NONE</b:widget-setting>
 <b:widget-setting name='link-4'>/p/hakknda.html</b:widget-setting>
 <b:widget-setting name='text-1'>Menü</b:widget-setting>
-<b:widget-setting name='link-1'>#</b:widget-setting>
 <b:widget-setting name='text-0'>Anasayfa</b:widget-setting>
-<b:widget-setting name='link-2'>/p/gizlilik-politikas.html</b:widget-setting>
 <b:widget-setting name='text-3'>_İtiraf Ediyorum</b:widget-setting>
-<b:widget-setting name='link-0'>/</b:widget-setting>
 <b:widget-setting name='text-2'>_Gizlilik Politikası</b:widget-setting>
+<b:widget-setting name='text-5'>_Sitemap</b:widget-setting>
 <b:widget-setting name='text-4'>_Hakkımızda</b:widget-setting>
+<b:widget-setting name='text-7'>Online Mağza</b:widget-setting>
+<b:widget-setting name='text-6'>İletişim</b:widget-setting>
+<b:widget-setting name='sorting'>NONE</b:widget-setting>
+<b:widget-setting name='link-1'>#</b:widget-setting>
+<b:widget-setting name='link-2'>/p/gizlilik-politikas.html</b:widget-setting>
+<b:widget-setting name='link-0'>/</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main' var='this'>
 <b:include name='content'/>
@@ -763,6 +785,7 @@ var data = {
 <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
 <b:widget-settings>
 <b:widget-setting name='content'>slider-3[recent/20]
+&lt;br /&gt;
 slider-1[random/4]</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
@@ -1337,7 +1360,7 @@ slider-1[random/4]</b:widget-setting>
 <b:includable id='threadedComments' var='post'><b:comment>Replaced</b:comment></b:includable>
 <b:includable id='threaded_comment_js' var='post'>
 <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
-<script type='text/javascript'>(function(){var D=<data:post.commentJso/>;var J=<data:post.commentMsgs/>;var t=<data:post.commentConfig/>;var I=null;if(D&amp;&amp;D.length&gt;0){I=parseInt(D[D.length-1].timestamp)+1}var C=function(c){var b=(c&amp;&amp;((c.content&amp;&amp;c.content.$t)||(c.summary&amp;&amp;c.summary.$t)))||&quot;&quot;;if(c&amp;&amp;c.gd$extendedProperty){for(var d in c.gd$extendedProperty){if(c.gd$extendedProperty[d].name==&quot;blogger.contentRemoved&quot;){return&#39;&lt;span class=&quot;deleted-comment&quot;&gt;&#39;+b+&quot;&lt;/span&gt;&quot;}}}return b};var z=function(g){I=null;var c=[];if(g&amp;&amp;g.feed&amp;&amp;g.feed.entry){for(var f=0,b;b=g.feed.entry[f];f++){var d={};var j=/blog-(\d+).post-(\d+)/.exec(b.id.$t);d.id=j?j[2]:null;d.body=C(b);d.timestamp=Date.parse(b.published.$t)+&quot;&quot;;if(b.author&amp;&amp;b.author.constructor===Array){var i=b.author[0];if(i){d.author={name:(i.name?i.name.$t:undefined),profileUrl:(i.uri?i.uri.$t:undefined),avatarUrl:(i.gd$image?i.gd$image.src:undefined)}}}if(b.link){if(b.link[2]){d.link=d.permalink=b.link[2].href}if(b.link[3]){var e=/.*comments\/default\/(\d+)\?.*/.exec(b.link[3].href);if(e&amp;&amp;e[1]){d.parentId=e[1]}}}d.deleteclass=&quot;item-control blog-admin&quot;;if(b.gd$extendedProperty){for(var h in b.gd$extendedProperty){if(b.gd$extendedProperty[h].name==&quot;blogger.itemClass&quot;){d.deleteclass+=&quot; &quot;+b.gd$extendedProperty[h].value}else{if(b.gd$extendedProperty[h].name==&quot;blogger.displayTime&quot;){d.displayTime=b.gd$extendedProperty[h].value}}}}c.push(d)}}return c};var y=function(b){if(M()){var c=t.feed+&quot;?alt=json&amp;v=2&amp;orderby=published&amp;reverse=false&amp;max-results=50&quot;;if(I){c+=&quot;&amp;published-min=&quot;+new Date(I).toISOString()}window.bloggercomments=function(f){var e=z(f);I=e.length&lt;50?null:parseInt(e[e.length-1].timestamp)+1;b(e);window.bloggercomments=null};c+=&quot;&amp;callback=bloggercomments&quot;;var d=document.createElement(&quot;script&quot;);d.type=&quot;text/javascript&quot;;d.src=c;document.getElementsByTagName(&quot;head&quot;)[0].appendChild(d)}};var M=function(){return !!I};var O=function(d,b){if(&quot;iswriter&quot;==d){var c=!!b.author&amp;&amp;b.author.name==t.authorName&amp;&amp;b.author.profileUrl==t.authorUrl;return c?&quot;true&quot;:&quot;&quot;}else{if(&quot;deletelink&quot;==d){return t.baseUri+&quot;/delete-comment.g?blogID=&quot;+t.blogId+&quot;&amp;postID=&quot;+b.id}else{if(&quot;deleteclass&quot;==d){return b.deleteclass}}}return&quot;&quot;};var A=null;var F=null;var H=undefined;var L=function(c,b){if(A==null){A=document.getElementById(&quot;comment-editor&quot;);if(A!=null){A.height=&quot;250px&quot;;A.style.display=&quot;block&quot;;F=A.src.split(&quot;#&quot;)}}if(A&amp;&amp;(c!==H)){A.src=&quot;&quot;;document.getElementById(b).insertBefore(A,null);A.src=F[0]+(c?&quot;&amp;parentID=&quot;+c:&quot;&quot;)+&quot;#&quot;+F[1];H=c}};var N=(window.location.hash||&quot;#&quot;).substring(1);var x,r;if(/^comment-form_/.test(N)){x=N.substring(&quot;comment-form_&quot;.length)}else{if(/^c[0-9]+$/.test(N)){r=N.substring(1)}}var E={maxDepth:t.maxThreadDepth};var B={id:t.postId,data:D,loadNext:y,hasMore:M,getMeta:O,onReply:L,rendered:true,initComment:r,initReplyThread:x,config:E,messages:J};var G=function(){if(window.goog&amp;&amp;window.goog.comments){var b=document.getElementById(&quot;comment-holder&quot;);window.goog.comments.render(b,B)}};if(window.goog&amp;&amp;window.goog.comments){G()}else{window.goog=window.goog||{};window.goog.comments=window.goog.comments||{};window.goog.comments.loadQueue=window.goog.comments.loadQueue||[];window.goog.comments.loadQueue.push(G)}})();</script>
+<script type='text/javascript'>(function(){var I=<data:post.commentJso/>;var C=<data:post.commentMsgs/>;var x=<data:post.commentConfig/>;var w=null;if(I&amp;&amp;I.length&gt;0){w=parseInt(I[I.length-1].timestamp)+1}var B=function(c){var b=(c&amp;&amp;((c.content&amp;&amp;c.content.$t)||(c.summary&amp;&amp;c.summary.$t)))||&quot;&quot;;if(c&amp;&amp;c.gd$extendedProperty){for(var d in c.gd$extendedProperty){if(c.gd$extendedProperty[d].name==&quot;blogger.contentRemoved&quot;){return&#39;&lt;span class=&quot;deleted-comment&quot;&gt;&#39;+b+&quot;&lt;/span&gt;&quot;}}}return b};var D=function(i){w=null;var e=[];if(i&amp;&amp;i.feed&amp;&amp;i.feed.entry){for(var h=0,b;b=i.feed.entry[h];h++){var f={};var d=/blog-(\d+).post-(\d+)/.exec(b.id.$t);f.id=d?d[2]:null;f.body=B(b);f.timestamp=Date.parse(b.published.$t)+&quot;&quot;;if(b.author&amp;&amp;b.author.constructor===Array){var c=b.author[0];if(c){f.author={name:(c.name?c.name.$t:undefined),profileUrl:(c.uri?c.uri.$t:undefined),avatarUrl:(c.gd$image?c.gd$image.src:undefined)}}}if(b.link){if(b.link[2]){f.link=f.permalink=b.link[2].href}if(b.link[3]){var g=/.*comments\/default\/(\d+)\?.*/.exec(b.link[3].href);if(g&amp;&amp;g[1]){f.parentId=g[1]}}}f.deleteclass=&quot;item-control blog-admin&quot;;if(b.gd$extendedProperty){for(var j in b.gd$extendedProperty){if(b.gd$extendedProperty[j].name==&quot;blogger.itemClass&quot;){f.deleteclass+=&quot; &quot;+b.gd$extendedProperty[j].value}else{if(b.gd$extendedProperty[j].name==&quot;blogger.displayTime&quot;){f.displayTime=b.gd$extendedProperty[j].value}}}}e.push(f)}}return e};var z=function(b){if(M()){var c=x.feed+&quot;?alt=json&amp;v=2&amp;orderby=published&amp;reverse=false&amp;max-results=50&quot;;if(w){c+=&quot;&amp;published-min=&quot;+new Date(w).toISOString()}window.bloggercomments=function(f){var e=D(f);w=e.length&lt;50?null:parseInt(e[e.length-1].timestamp)+1;b(e);window.bloggercomments=null};c+=&quot;&amp;callback=bloggercomments&quot;;var d=document.createElement(&quot;script&quot;);d.type=&quot;text/javascript&quot;;d.src=c;document.getElementsByTagName(&quot;head&quot;)[0].appendChild(d)}};var M=function(){return !!w};var O=function(d,b){if(&quot;iswriter&quot;==d){var c=!!b.author&amp;&amp;b.author.name==x.authorName&amp;&amp;b.author.profileUrl==x.authorUrl;return c?&quot;true&quot;:&quot;&quot;}else{if(&quot;deletelink&quot;==d){return x.baseUri+&quot;/delete-comment.g?blogID=&quot;+x.blogId+&quot;&amp;postID=&quot;+b.id}else{if(&quot;deleteclass&quot;==d){return b.deleteclass}}}return&quot;&quot;};var F=null;var G=null;var v=undefined;var L=function(b,c){if(F==null){F=document.getElementById(&quot;comment-editor&quot;);if(F!=null){F.height=&quot;250px&quot;;F.style.display=&quot;block&quot;;G=F.src.split(&quot;#&quot;)}}if(F&amp;&amp;(b!==v)){F.src=&quot;&quot;;document.getElementById(c).insertBefore(F,null);F.src=G[0]+(b?&quot;&amp;parentID=&quot;+b:&quot;&quot;)+&quot;#&quot;+G[1];v=b}};var N=(window.location.hash||&quot;#&quot;).substring(1);var y,H;if(/^comment-form_/.test(N)){y=N.substring(&quot;comment-form_&quot;.length)}else{if(/^c[0-9]+$/.test(N)){H=N.substring(1)}}var E={maxDepth:x.maxThreadDepth};var J={id:x.postId,data:I,loadNext:z,hasMore:M,getMeta:O,onReply:L,rendered:true,initComment:H,initReplyThread:y,config:E,messages:C};var s=function(){if(window.goog&amp;&amp;window.goog.comments){var b=document.getElementById(&quot;comment-holder&quot;);window.goog.comments.render(b,J)}};if(window.goog&amp;&amp;window.goog.comments){s()}else{window.goog=window.goog||{};window.goog.comments=window.goog.comments||{};window.goog.comments.loadQueue=window.goog.comments.loadQueue||[];window.goog.comments.loadQueue.push(s)}})();</script>
 </b:includable>
 <b:includable id='threaded_comments' var='post'><div class='comments' id='comments'>
 <a name='comments'/><h4><data:post.commentLabelFull/>:</h4><div class='comments-content'>
@@ -1361,7 +1384,7 @@ slider-1[random/4]</b:widget-setting>
 <b:if cond='data:view.isLayoutMode or (data:view.isMultipleItems and (data:widgets any w =&gt; w.sectionId in [&quot;allSide&quot;, &quot;indexSide&quot;])) or (data:view.isPost and data:widgets any w =&gt; w.sectionId in [&quot;allSide&quot;, &quot;postSide&quot;]) or (data:view.isPage and data:widgets any w =&gt; w.sectionId == &quot;allSide&quot;)'>
 <aside class='mainSide wrapper' id='mainSide-wrapper' itemscope='itemscope' itemtype='https://schema.org/WPSideBar' role='complementary'>
 <b:section class='sidebar' cond='data:view.isMultipleItems' id='indexSide' name='Sidebar [index]' preferred='yes' showaddelement='yes'>
-<b:widget id='HTML5' locked='false' title='Kategoriler' type='HTML' visible='true'>
+<b:widget id='HTML5' locked='false' title='' type='HTML' visible='true'>
 <b:widget-settings>
 <b:widget-setting name='content'>&lt;div class=&#39;sidebar section&#39; id=&#39;indexSide&#39; name=&#39;Sidebar [index]&#39;&gt;&lt;div class=&#39;widget Label&#39; data-type=&#39;Featured&#39; data-version=&#39;2&#39; id=&#39;Label1&#39;&gt;
 &lt;div class=&#39;widget-heading&#39;&gt;
@@ -1415,7 +1438,7 @@ comments</b:widget-setting>
 <b:section class='footerCol' id='footerCol' maxwidgets='1' name='Footer Mono Column' showaddelement='yes'/>
 </b:if>
 <b:section class='footerCols' id='footerCols' maxwidgets='2' name='Footer Multi Columns' showaddelement='yes'>
-<b:widget id='Image1' locked='false' title='Kadınca Bir Blog' type='Image' visible='true'>
+<b:widget id='Image1' locked='false' title='' type='Image' visible='true'>
 <b:widget-settings>
 <b:widget-setting name='displayUrl'>https://hamdiphonecomtr.github.io/kadincalogo.png</b:widget-setting>
 <b:widget-setting name='displayHeight'>193</b:widget-setting>
@@ -1445,7 +1468,7 @@ comments</b:widget-setting>
 </b:if></div>
 </b:includable>
 </b:widget>
-<b:widget id='PopularPosts1' locked='false' title='En Çok Okunanlar' type='PopularPosts' visible='true'>
+<b:widget id='PopularPosts1' locked='false' title='' type='PopularPosts' visible='true'>
 <b:widget-settings>
 <b:widget-setting name='numItemsToShow'>2</b:widget-setting>
 <b:widget-setting name='showThumbnails'>false</b:widget-setting>
@@ -1518,17 +1541,19 @@ comments</b:widget-setting>
 </b:widget>
 <b:widget id='LinkList1' locked='false' title='' type='LinkList' visible='true'>
 <b:widget-settings>
+<b:widget-setting name='link-5'>/p/arsiv.html</b:widget-setting>
 <b:widget-setting name='link-3'>#</b:widget-setting>
-<b:widget-setting name='sorting'>NONE</b:widget-setting>
 <b:widget-setting name='link-4'>#</b:widget-setting>
 <b:widget-setting name='text-1'>facebook</b:widget-setting>
-<b:widget-setting name='link-1'>#</b:widget-setting>
 <b:widget-setting name='text-0'>instagram</b:widget-setting>
-<b:widget-setting name='link-2'>#</b:widget-setting>
 <b:widget-setting name='text-3'>pinterest</b:widget-setting>
-<b:widget-setting name='link-0'>#</b:widget-setting>
 <b:widget-setting name='text-2'>twitter</b:widget-setting>
+<b:widget-setting name='text-5'>Sitemap</b:widget-setting>
 <b:widget-setting name='text-4'>whatsapp</b:widget-setting>
+<b:widget-setting name='sorting'>NONE</b:widget-setting>
+<b:widget-setting name='link-1'>#</b:widget-setting>
+<b:widget-setting name='link-2'>#</b:widget-setting>
+<b:widget-setting name='link-0'>#</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main' var='this'>
 <b:include name='content'/>
