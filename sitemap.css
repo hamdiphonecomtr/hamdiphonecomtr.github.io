@@ -6,7 +6,7 @@
 .stiemap-wrap p strong span{color:#e00303;font-size:13px;font-weight:600;}
 .stiemap-posts h4:before{content:"\f142";float:left;color:#000;font-weight:900;font-family:'Font Awesome 5 Free';font-size:12px;margin:0 4px 0 0;}
 .stiemap-wrap p a:before{content:"\f192";float:left;color:#000;font-weight:500;font-family:'Font Awesome 5 Free';font-size:12px;line-height:26px;margin:0 4px 0 0;}
-.stiemap-wrap p a:hover{color:#1616fb;}
+.stiemap-wrap p a:hover{color:#1cbb8c;}
 @media screen and (max-width:640px){.stiemap-wrap{display:block;}
 .stiemap-wrap p{width:100%;}
 }
