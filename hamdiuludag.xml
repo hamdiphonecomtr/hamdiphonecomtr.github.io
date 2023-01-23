@@ -1176,30 +1176,6 @@ slider-1[random/4]</b:widget-setting>
 </b:if>
 </b:includable>
 <b:includable id='postLocation'><b:comment>Replaced</b:comment></b:includable>
-<b:includable id='postMeta' var='post'>
-<script type='application/ld+json'>
-        {
-            &quot;@context&quot;: &quot;http://schema.org&quot;,
-            &quot;@type&quot;: &quot;BlogPosting&quot;,
-            &quot;mainEntityOfPage&quot;: {
-                &quot;@type&quot;: &quot;WebPage&quot;,
-                &quot;@id&quot;: &quot;<data:post.url.canonical.jsonEscaped/>&quot;
-            },
-            &quot;headline&quot;: &quot;<data:post.title.jsonEscaped/>&quot;,
-            &quot;description&quot;: &quot;<b:eval expr='(data:post.body snippet { length: 150, links: false, linebreaks: false, ellipsis: true }).jsonEscaped'/>&quot;,
-            &quot;datePublished&quot;: &quot;<data:post.date.iso8601.jsonEscaped/>&quot;,
-            &quot;dateModified&quot;: &quot;<data:post.lastUpdated.iso8601.jsonEscaped/>&quot;,
-            <b:include name='postMetadataJSONImage'/>
-            <b:include name='postMetadataJSONPublisher'/>
-            &quot;author&quot;: {
-                &quot;url&quot;: &quot;<data:blog.canonicalHomepageUrl.jsonEscaped/>&quot;,
-                &quot;@type&quot;: &quot;Person&quot;,
-                &quot;name&quot;: &quot;<data:post.author.name.jsonEscaped/>&quot;
-            }
-        }
-        // postMeta Custom By HamdiPhone
-        </script>
-</b:includable>
 <b:includable id='postMetadataJSONImage'>
 &quot;image&quot;: {
 &quot;@type&quot;: &quot;ImageObject&quot;,
